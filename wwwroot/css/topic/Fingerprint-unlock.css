@@ -1,0 +1,48 @@
+.header-text {width:600px;max-width:100%;padding:95px 0;line-height:1.75;color:#333;}
+.header-text h1,.header-text h3 {font-size:40px;font-weight:bold;line-height:1.5;color:#333;}
+.header-text h4 {font-size:20px;margin-bottom:50px;font-weight:normal;}
+.bg1 {background:url("../../images/Fingerprint-unlock/page-banner.jpg") center no-repeat;}
+.bg2 {background:url("../../images/Fingerprint-unlock/page-bg1.jpg") center no-repeat;color:#333;}
+.bg3 {background:url("../../images/Fingerprint-unlock/page-bg2.jpg") center no-repeat;color:#333;}
+.bg4 {background:url("../../images/Fingerprint-unlock/page-bg3.jpg") center no-repeat;color:#333;}
+.bg5 {background:url("../../images/Fingerprint-unlock/page-bg4.html") center no-repeat;color:#333;}
+.bg1 .header-text {color:#999;font-size:16px;}
+.page-h2 {font-size:40px;line-height:1.5;margin-bottom:70px;color:#666;text-align:center;}
+.choose-list {display:grid;grid-column-gap:25px;grid-row-gap:30px;grid-template-columns:1fr 1fr 1fr 1fr;}
+.choose-list .list-block {background:#F3F3F3;padding:40px 20px;font-size:14px;line-height:1.75;color:#666;text-align:center;}
+.choose-list .block-t {font-size:18px;font-weight:bold;margin:15px 0 20px;color:#333;}
+.header-text ul li {font-size:20px;line-height:50px;display:flex;}
+.heading-title {text-align:center;font-size:40px;margin-bottom:50px;font-weight:bold;color:#333;}
+.finger-unlock-product {display:grid;grid-column-gap:25px;grid-row-gap:60px;grid-template-columns:1fr 1fr 1fr 1fr 1fr;text-align:center;font-size:14px;color:#666;}
+.finger-unlock-product .model-name {padding:15px;}
+.finger-unlock-video {display:grid;grid-column-gap:40px;grid-row-gap:60px;grid-template-columns:1fr 1fr 1fr;}
+.finger-unlock-video .video-item {text-align:center;}
+.finger-unlock-video .video-item picture {display:inline-block;border:1px solid #DDD;}
+.finger-unlock-video .video-item  .video-title {text-align:center;padding:20px;font-size:16px;color:#666;line-height:1.75;}
+@media only screen and (max-width:1279px) {.header-text {padding:50px;}
+.header-text h1,.header-text h3 {font-size:24px;line-height:2;}
+.header-text h4 {font-size:18px;margin-bottom:10px;}
+.page-h2 {font-size:24px;}
+.choose-list {display:grid;grid-column-gap:25px;grid-row-gap:30px;grid-template-columns:1fr 1fr;}
+.header-text ul li {font-size:16px;line-height:40px;}
+.finger-unlock-product {grid-column-gap:25px;grid-row-gap:30px;grid-template-columns:1fr 1fr 1fr 1fr;}
+.bg1 {background-size:cover;}
+.bg2,.bg3,.bg4,.bg5 {color:#333;background-size:cover;}
+.finger-unlock-video {display:grid;grid-column-gap:25px;grid-row-gap:30px;grid-template-columns:1fr  1fr;}
+}
+@media only screen and (max-width:768px) {.heading-title {font-size:24px;}
+.header-text {margin:auto;min-height:900px;padding:0;}
+.header-text h1,.header-text h3 {font-size:24px;}
+.header-text h4 {font-size:20px;margin-bottom:50px;font-weight:normal;}
+.page-h2 {font-size:24px;}
+.choose-list {display:grid;grid-column-gap:25px;grid-row-gap:30px;grid-template-columns:1fr;}
+.header-text ul li {font-size:16px;line-height:2;}
+.finger-unlock-product {grid-column-gap:25px;grid-row-gap:30px;grid-template-columns:1fr 1fr;}
+.bg1 {background:url("../../images/Fingerprint-unlock/page-banner-m.jpg") center no-repeat;background-size:cover;padding:80px 0;}
+.bg2 {background:url("../../images/Fingerprint-unlock/page-bg1-m.jpg") center no-repeat;color:#333;background-size:cover;}
+.bg3 {background:url("../../images/Fingerprint-unlock/page-bg2-m.jpg") center no-repeat;color:#333;background-size:cover;}
+.bg4 {background:url("../../images/Fingerprint-unlock/page-bg3-m.jpg") center no-repeat;color:#333;background-size:cover;}
+.bg5 {background:url("../../images/Fingerprint-unlock/page-bg4-m.html") center no-repeat;color:#333;background-size:cover;}
+.finger-unlock-video {display:grid;grid-column-gap:40px;grid-row-gap:60px;grid-template-columns:1fr;}
+.finger-unlock-video .video-item .video-title {font-size:14px;}
+}

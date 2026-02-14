@@ -1,49 +1,491 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SRVIndia</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/SRVIndia.styles.css" asp-append-version="true" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="~/css/ccbff.css">
+    <link rel="stylesheet" href="~/css/responsivecbff.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/wow.min.js" defer></script>
+    <script src="~/js/maincbff.js?version=0529"></script>
+    <script src="~/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="~/css/swiper-bundle.min.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SRVIndia</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+	<header>
+		<div class="head-wrapper">
+			<div class="logo">
+				<a href="index.html"><img src="~/images/logosrv1.png" alt="Mietubl Mobile Phone Accessories Wholesale"></a>
+			</div>
+			<nav class="pc-nav" role="navigation">
+				<ul>
+					<li class="nav-item-link sub-menu">
+						<a href="#" role="button">Home</a>
+						<ul class="sub-menu-wrapper">
+							<li><a href="About-us/index.html" title="Company Profile">Home SRV</a></li>
+
+						</ul>
+					</li>
+					<li class="nav-item-link sub-nav">
+						<a href="#" role="button">Products</a>
+						<div class="sub-nav-wrapper">
+							<div class="wrapper">
+								<div class="sub-nav-box">
+									<div class="sub-box">
+										<dl class="sub-nav-text">
+											<dt><a href="Screen-Protector/index.html">Screen Protector</a></dt>
+											<dd><a href="Screen-Protector/Mobile-Phone-Screen-Protector/index.html" title="Explore all Mobile phone screen protector">Mobile Phone Screen Protector</a></dd>
+											<dd><a href="Screen-Protector/Tablet-Screen-Protector/index.html" title="Explore all Tablet screen protector">Tablet Screen Protector</a></dd>
+											<dd><a href="Screen-Protector/Car-screen-protector/index.html" title="Explore all Car screen protector">Car Screen Protector</a></dd>
+											<dd><a href="Screen-Protector/Smartwatch-protector/index.html" title="Explore all Smartwatch protector">Smartwatch Protector</a></dd>
+											<dd><a href="Screen-Protector/Lens-protector/index.html" title="Explore all Lens Protector">Lens Protector</a></dd>
+											<dd><a href="Screen-Protector/Fingerprint-unlock/index.html">Fingerprint Unlocking Series</a></dd>
+											<dd><a href="Screen-Protector/Quick-fit-box/index.html" title="Magic Box Screen Protector">Magic Box Screen Protector</a></dd>
+											<dd><a href="Compatible/index.html" title="Screen protector compatible model search">Compatible Model Search</a></dd>
+										</dl>
+									</div>
+									<div class="sub-box">
+										<dl class="sub-nav-text">
+											<dt><a href="Screen-Protector-Cutting-Machine/index.html" title="Explore all Screen Protector Cutting Machine">Screen Protector Machines</a></dt>
+											<dd><a href="Screen-protector/241.html" class="new" title="Details about Extended Screen Protector Cutting Machine">MTB-CUT 180TPro</a></dd>
+											<dd><a href="Screen-Protector/74.html" title="Details about  MTB-CUT 180T screen protector machine">MTB-CUT 180T</a></dd>
+											<dd><a href="Screen-protector/246.html" class="new" title="3-in-1 Screen Protector Cutting and Pasting Machine">MTB-CUT M688</a></dd>
+											<dd><a href="Screen-Protector/176.html" title="Details about screen protector cutting and laminating all-in-one machine">MTB-CUT M288</a></dd>
+											<dd><a href="Screen-Protector/85.html" title="Details about MTB-CUT M188 TPU Screen protector machine">MTB-CUT M188</a></dd>
+											<dd><a href="Screen-Protector-Cutting-Machine/index.html#comparison" title="Screen protector machine comparison">Comparison</a></dd>
+										</dl>
+									</div>
+									<div class="sub-box">
+										<dl class="sub-nav-text">
+											<dt>Materials</dt>
+											<dd><a href="Screen-Protector-Cutting-Machine/Hydrogel-Screen-Protector/index.html" title="Screen protector sheets for cutting machine">Screen Protector Sheets</a></dd>
+											<dd><a href="Pattern/index.html" title="Explore all back film for phone">Back Film for Phone</a></dd>
+										</dl>
+									</div>
+
+									<div class="sub-box">
+										<dl class="sub-nav-text">
+											<dt><a href="Data-cable/index.html" title="Explore all data cable">Data cable</a></dt>
+											<dd><a href="Data-cable/Lightning/index.html" title="Explore all lightning data cable">Lightning</a></dd>
+											<dd><a href="Data-cable/TYPE-C/index.html" title="Wholesale TYPE-C data cable">TYPE-C</a></dd>
+											<dd><a href="Data-cable/Micro-USB/index.html" title="Wholesale  Micro USB data cable">Micro USB</a></dd>
+											<dd><a href="Data-cable/3-in-1/index.html" title="Wholesale 3 in 1 data cable">3 in 1</a></dd>
+										</dl>
+									</div>
+									<div class="sub-box">
+										<dl class="sub-nav-text">
+											<dt>Audios</dt>
+											<dd><a href="Wired-headphones/index.html" title="Explore and wholesale wired headphones"> Wired Headphones</a></dd>
+											<dd><a href="Earphone/index.html" title="Explore and wholesale earbuds">Earbuds</a></dd>
+											<dd><a href="Headphones/index.html" title="Explore and wholesale headphones"> Headphones</a></dd>
+											<dd><a href="Bluetooth-Speaker/index.html" title="Explore and wholesale Bluetooth Speaker">Bluetooth Speaker</a></dd>
+										</dl>
+									</div>
+									<div class="sub-box">
+										<dl class="sub-nav-text">
+											<dt>Power</dt>
+											<dd><a href="Portable-power-station/index.html" title="Explore and wholesale Power station">Portable Power Station</a></dd>
+											<dd><a href="Power-bank/index.html" title="Explore and wholesale Power bank">Power Bank</a></dd>
+
+										</dl>
+									</div>
+									<div class="sub-box">
+										<dl class="sub-nav-text">
+											<dt>Charger</dt>
+											<dd><a href="Wall-charger/index.html" title="Explore and wholesale wall charger">Wall Charger</a></dd>
+											<dd><a href="Car-charger/index.html" title="Explore and wholesale car charger">Car Charger</a></dd>
+										</dl>
+									</div>
+									<div class="sub-box">
+										<dl class="sub-nav-text">
+											<dt>Others</dt>
+											<dd><a href="Stylus-pen/index.html" title="Explore and wholesale stylus pen">Stylus Pen</a></dd>
+											<dd><a href="Mobile-phone-skin-printer/index.html" title="Details about Mini Mobile Phone Skin Printer">Mobile Phone Skin Printer</a></dd>
+											<dd><a href="Screen-protector/117.html" title="Mobile phone case printer machine">Mobile phone case printer machine</a></dd>
+
+										</dl>
+									</div>
+								</div>	<!--/sub-nav-box-->
+							</div><!--wrapper-->
+						</div>
+					</li>
+
+					<li class="nav-item-link"><a href="Videos/index.html" title="Videos">Videos</a></li>
+					<li class="nav-item-link"><a href="News/index.html" title="Mietubl Latest Releases">News</a></li>
+					<li class="nav-item-link sub-menu">
+						<a href="#" role="button">Support</a>
+					</li>
+					<li class="nav-item-link"><a href="contactUs.html">Contact Us</a></li>
+					<li class="nav-item-link highlight sub-menu">
+						<a href="Become-agent/index.html" title="Join our sales network">Join Our Sales Network</a>
+						<ul class="sub-menu-wrapper">
+							<li><a href="Why-joining-us/index.html" title="Why Joining Us">Why Joining Us</a></li>
+							<li><a href="Become-agent/index.html#support" title="Business Type">How We Support</a></li>
+							<li><a href="Become-agent/index.html#type" title="Business Type">Business Type</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<!-- Mobile responsive start here-->
+	<div class="mobile-container">
+		<div class="mobile-nav-wrapper">
+			<div class="mobile-nav-header">
+				<div class="mobile-nav-logo">
+					<a href="index.html"><img src="~/images/logosrv1.png" alt="SRV"></a>
+				</div>
+				<div class="mobile-nav-close">
+					<span></span>
+				</div>
+			</div>
+			<nav class="mobile-nav" role="navigation">
+				<ul>
+					<li class="sub-item-link">
+						<div class="lib-sub">
+							<a href="#" class="link expand" title="About SRV Company" class="link">Home</a><i class="arrow expand"></i>
+						</div>
+						<ul class="son-box">
+							<li><a href="About-us/index.html" class="son-sub" title="Company Profile">Home SRV</a></li>
+
+						</ul>
+					</li>
+					<li class="sub-item-link">
+						<div class="lib-sub">
+							<a href="#" class="link expand" title="Browse our product categories">Products</a><i class="arrow expand"></i>
+						</div>
+						<ul class="son-box">
+							<li>
+								<span class="triplparent">Screen Protector</span>
+								<ul class="triple">
+									<li>
+										<a href="Screen-Protector/Mobile-Phone-Screen-Protector/index.html"
+										   title="Mobile screen protectors for all brands">Cellphone</a>
+									</li>
+									<li>
+										<a href="Screen-Protector/Tablet-Screen-Protector/index.html"
+										   title="Tablet and laptop screen protectors">Tablet Screen Protector</a>
+									</li>
+									<li>
+										<a href="Screen-Protector/Car-screen-protector/index.html"
+										   title="Automotive dashboard screen protectors">Car Screen Protector</a>
+									</li>
+									<li>
+										<a href="Screen-Protector/Smartwatch-protector/index.html"
+										   title="Smartwatch screen protection">Smartwatch Protector</a>
+									</li>
+									<li>
+										<a href="Screen-Protector/Lens-protector/index.html"
+										   title="Camera lens protection">Lens Protector</a>
+									</li>
+									<li>
+										<a href="Screen-Protector/Fingerprint-unlock/index.html"
+										   title="Fingerprint unlock-compatible protectors">
+											Fingerprint Unlocking
+											Series
+										</a>
+									</li>
+									<li>
+										<a href="Screen-Protector/Quick-fit-box/index.html"
+										   title="Magic Box Screen Protector">Magic Box Screen Protector</a>
+									</li>
+									<li>
+										<a href="Compatible/index.html"
+										   title="Search protectors by device model">Compatible Model Search</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="triplparent">Screen Protector Cutting Machine</span>
+								<ul class="triple">
+									<li>
+										<a href="Screen-protector/241.html" class="new"
+										   title="Details about Extended Screen Protector Cutting Machine">
+											MTB-CUT
+											180TPro
+										</a>
+									</li>
+									<li>
+										<a href="Screen-Protector/74.html" title="MTB-CUT 180T details">MTB-CUT 180T</a>
+									</li>
+									<li>
+										<a href="Screen-protector/246.html" class="new"
+										   title="3-in-1 Screen Protector Cutting and Pasting Machine">MTB-CUT M688</a>
+									</li>
+									<li>
+										<a href="Screen-Protector/176.html" class="new"
+										   title="All-in-one protector cutting and laminating machine">MTB-CUT M288</a>
+									</li>
+									<li>
+										<a href="Screen-Protector/85.html"
+										   title="Entry-level TPU cutting machine">MTB-CUT M188</a>
+									</li>
+									<li>
+										<a href="Mobile-phone-skin-printer/index.html"
+										   title="Details about  mobile phone skin printer">
+											Mobile Phone Skin
+											Printer
+										</a>
+									</li>
+									<li>
+										<a href="Screen-Protector-Cutting-Machine/Hydrogel-Screen-Protector/index.html"
+										   title="Hydrogel cutting material sheets">Screen Protector Sheets</a>
+									</li>
+									<li>
+										<a href="Pattern/index.html" title="Phone back film collection">
+											Back Film for
+											Phone
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="triplparent">Data Cable</span>
+								<ul class="triple">
+									<li>
+										<a href="Data-cable/Lightning/index.html"
+										   title="Lightning charging cables">Lightning</a>
+									</li>
+									<li>
+										<a href="Data-cable/TYPE-C/index.html"
+										   title="Type-C fast charging cables">TYPE-C</a>
+									</li>
+									<li>
+										<a href="Data-cable/Micro-USB/index.html" title="Micro USB cables">Micro USB</a>
+									</li>
+									<li>
+										<a href="Data-cable/3-in-1/index.html"
+										   title="3-in-1 universal charging cables">3 in 1</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="triplparent">Audios</span>
+								<ul class="triple">
+									<li>
+										<a href="Bluetooth-Speaker/index.html"
+										   title="Portable Bluetooth speakers">Bluetooth Speaker</a>
+									</li>
+									<li>
+										<a href="Earphone/index.html"
+										   title="Compact earbuds and in-ear headphones">Earbuds</a>
+									</li>
+									<li>
+										<a href="Headphones/index.html"
+										   title="Over-ear and on-ear headphones">Headphones</a>
+									</li>
+									<li>
+										<a href="Wired-headphones/index.html" title="Wired audio headsets">
+											Wired
+											Headphones
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="triplparent">Charger</span>
+								<ul class="triple">
+									<li>
+										<a href="Wall-charger/index.html"
+										   title="Wall chargers for phones and tablets">Wall Charger</a>
+									</li>
+									<li>
+										<a href="Car-charger/index.html" title="Car chargers for vehicles">
+											Car
+											Charger
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="triplparent">Power</span>
+								<ul class="triple">
+									<li>
+										<a href="Portable-power-station/index.html"
+										   title="Portable emergency power stations">Portable Power Station</a>
+									</li>
+									<li>
+										<a href="Power-bank/index.html"
+										   title="Rechargeable power banks for mobile use">Power Bank</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span class="triplparent">Others</span>
+								<ul class="triple">
+									<li>
+										<a href="Stylus-pen/index.html" title="Explore and wholesale stylus pen">
+											Stylus
+											Pen
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-item-link">
+						<div class="lib-sub"><a href="Videos/index.html" title="Videos" class="link">Videos</a></div>
+					</li>
+					<li class="sub-item-link">
+						<div class="lib-sub">
+							<a href="News/index.html" title="Latest SRV product announcements"
+							   class="link">News</a>
+						</div>
+					</li>
+					<li class="sub-item-link">
+						<div class="lib-sub">
+							<a href="#" class="link expand" title="Company support and news center">Support</a><i class="arrow expand"></i>
+						</div>
+						<ul class="son-box">
+							<li><a href="Downloads/index.html" class="son-sub" title="Downloads">Downloads</a></li>
+							<li>
+								<a href="Screen-Protector-Cutting-Machine/Instruction/index.html" class="son-sub"
+								   title="Screen Protector machine instruction">Instruction</a>
+							</li>
+							<li>
+								<a href="Screen-Protector-Cutting-Machine/Troubleshooting/index.html" class="son-sub"
+								   title="Screen Protector machin troubleshooting">Troubleshooting</a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-item-link">
+						<div class="lib-sub">
+							<a href="Become-agent/index.html" class="link expand"
+							   title="Partner with SRV and become an agent">Join Our Sales Network</a><i class="arrow expand"></i>
+						</div>
+						<ul class="son-box">
+							<li>
+								<a href="Why-joining-us/index.html" class="son-sub" title="Why Joining Us">
+									Why Joining
+									Us
+								</a>
+							</li>
+							<li>
+								<a href="Become-agent/index.html#support" class="son-sub" title="Business Type">
+									How We
+									Support
+								</a>
+							</li>
+							<li>
+								<a href="Become-agent/index.html#type" class="son-sub" title="Business Type">
+									Business
+									Type
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="sub-item-link">
+						<div class="lib-sub">
+							<a href="Contact-Us/index.html" title="Contact SRV team"
+							   class="link">Contact Us</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="mask"></div>
+	</div>
+
+	<div>
             @RenderBody()
-        </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - SRVIndia - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+	<footer>
+		<div class="footer-inner flex">
+			<div class="b1">
+				<div class="footer-logo">
+					<img src="images/logosrv1.png" alt="SRV">
+				</div>
+				<div class="footer-slogan">Make It Easier To Use,Better Life</div>
+
+
+
+				<ul class="social-contact">
+
+					<li class="twitter">
+						<a href=" https://x.com/srvindia_" target="_blank" title="Follow on Twitter">
+							<span class="twitter">
+								<i class="fab fa-x-twitter"></i>
+							</span>
+						</a>
+					</li>
+
+					<li class="youtube">
+						<a href="http://www.youtube.com/SRVINDIA-A" target="_blank" title="Subscribe on YouTube">
+							<span class="youtube">
+								<i class="fab fa-youtube"></i>
+							</span>
+						</a>
+					</li>
+
+					<li class="email">
+						<a href="mailto:contact@srvindia.co.in" title="Write to us">
+							<span class="email">
+								<i class="fas fa-envelope"></i>
+							</span>
+						</a>
+					</li>
+
+					<li class="Instagram">
+						<a href="https://www.instagram.com/srvindia_" target="_blank" title="Follow on Instagram">
+							<span class="instagram">
+								<i class="fab fa-instagram"></i>
+							</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			<div class="b2">
+				<dl>
+					<dt>
+						<h4>About Us</h4>
+					</dt>
+					<dd><a href="About-us/index.html" title="About us">Home</a></dd>
+
+					<dd><a href="Become-agent/index.html">Become Our Agent</a></dd>
+					<dd><a href="Contact-Us/index.html">Contact Us</a></dd>
+					<dd><a href="Privacy/index.html">Privacy</a></dd>
+				</dl>
+			</div><!--b2 end--->
+			<div class="b3">
+				<dl>
+					<dt>
+						<h4>Explore & Support</h4>
+					</dt>
+					<dd><a href="News/index.html" title="News">News</a></dd>
+
+				</dl>
+			</div><!--b3 end--->
+
+			<div class="b4">
+				<h4>Contact information</h4>
+				<div class="foot-tel">+91 Loading....</div>
+				<div class="text"> Mumbai, Maharashtra <br>India</div>
+			</div>
+		</div>
+	</footer>
+
+	
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			autoplay: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true
+			},
+		});
+
+	</script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

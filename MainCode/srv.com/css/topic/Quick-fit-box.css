@@ -1,0 +1,117 @@
+h2 {text-align:center;margin-bottom:40px;font-size:36px}
+h3 {margin-bottom:100px;text-align:center;font-size:36px;color:#333;}
+.hero {background:url(../../images/Quick-fit-box/banner.jpg) center no-repeat;padding:220px 20px;color:#fff;background-size:cover;}
+.hero .text-box {width:600px;max-width:100%;}
+.hero h1 {font-size:40px;margin-bottom:20px}
+.hero p {font-size:16px;margin-bottom:30px}
+.btn {display:inline-block;padding:10px 20px;background:var(--color_primary);color:#FFF;z-index:9;transition:all .3s;font-size:14px;border-radius:3px;overflow:hidden;}
+.features {display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.feature-item {background-color:#fafafa;padding:20px;border-radius:10px;text-align:center;font-size:14px;color:#999}
+.feature-item .icon {width:48px;height:48px;margin:auto}
+.feature-item h3 {color:#333;font-size:20px;margin:10px 0}
+.comparison {text-align:center;line-height:1.75}
+.comparison-box {display:grid;grid-template-columns:1fr 2fr 2fr;grid-row-gap:10px;}
+.table-heading {font-size:24px;text-align:center;padding:40px;background:#f5f5f5;display:flex;align-items:center;justify-content:center}
+.table-heading:nth-child(2) {color:#D61E04;}
+.table-heading:nth-child(3) {color:#0AAE1D}
+.comparison-box .first {display:flex;align-items:center;justify-content:center;background:#f5f5f5}
+.comparison-box .second,.comparison-box .third {display:flex;align-items:center;justify-content:flex-start;text-align:left;font-size:16px;padding:30px;color:#999;background:#f5f5f5}
+.comparison-box .second .no {display:inline-block;width:30px;height:30px;background:url(../../images/Quick-fit-box/no.svg) center no-repeat;background-size:cover;flex-shrink:0;margin-right:20px}
+.comparison-box .third .right {display:inline-block;width:30px;height:30px;background:url(../../images/Quick-fit-box/yes.svg) center no-repeat;background-size:cover;flex-shrink:0;margin-right:20px}
+.video-wrapper {display:flex;flex-direction:row;justify-content:space-between;flex-wrap:wrap;margin:50px auto;align-items:center;}
+.video-container iframe {position:absolute;top:0;left:0;width:100%;height:100%;object-fit:fill;max-width:100%;}
+.video-wrapper .video-frame,.video-wrapper .video-text {width:47.5%}
+.video-wrapper .video-text {text-align:left;font-size:18px;color:#999;}
+.video-wrapper .video-text h3 {text-align:left;margin-bottom:20px;}
+.video-wrapper .video-frame {border-radius:10px;overflow:hidden}
+.video-wrapper .video-container {position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.customization {display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:80px;}
+.custom-option {display:flex;flex-wrap:wrap;flex-direction:column;align-items:center;margin-bottom:80px;text-align:center;}
+.custom-option h4 {font-size:20px;color:#f08200;margin:40px auto 30px;}
+.custom-option .custom-txt {color:#999;font-size:16px;}
+.distributors {text-align:center;padding:100px 0;}
+.distributors h2 {color:#333;text-align:center;margin-bottom:20px}
+.distributors .box {width:640px;font-size:16px;color:#666;max-width:100%;margin:0 auto 80px;text-align:center}
+.distributors .advantages {display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr;grid-column-gap:40px;}
+.distributors .advantages li {list-style-type:none;margin-bottom:20px;line-height:1.75;color:#999;font-size:16px;}
+.distributors .advantages .icon {margin-bottom:20px;}
+@media only screen and (max-width:1279px) {
+.hero {padding:100px 0;}
+.table-heading {font-size:18px;}
+.comparison-box {grid-template-columns:1fr 2fr 2fr;gap:10px}
+.comparison-box .first {font-size:16px}
+.comparison-box .second,.comparison-box .third {padding:10px 20px;font-size:16px;justify-content:start}
+.comparison-box .second .no,.comparison-box .third .right {width:24px;height:24px;}
+}
+@media only screen and (max-width:768px) {
+	.video-wrapper{flex-direction:column;}
+	.video-wrapper .video-frame, .video-wrapper .video-text{width:100%;}
+	.customization{grid-template-columns: 1fr;}
+	.distributors .advantages{grid-template-columns: 1fr;}
+}
+
+@media only screen and (max-width:480px) {
+	.hero h1,
+	h2,h3,
+	.video-wrapper .video-text h3,
+	.distributors h2{font-size:24px;}
+	.table-heading{display:none;}
+	.comparison-box .second, .comparison-box .third{
+	font-size:14px;
+	}
+	.comparison-box{
+		grid-template-columns:1fr;
+		grid-gap:10px;
+	}
+
+	.video-wrapper .video-text{
+		font-size:14px;
+	}
+	.comparison-box .first{
+		padding:20px;
+		font-weight:bold;
+	}
+	.comparison-box .second, .comparison-box .third{
+		padding:50px 20px 20px;
+		position:relative;
+	}
+	
+	.comparison-box .second::before{
+		content:"Traditional ways";
+		position:absolute;
+		top:0;
+		left:0;
+		height:40px;
+		line-height:40px;
+		width:100%;
+		background:#f08200;	
+		color:#FFF;
+		text-align:center;
+	}
+	.comparison-box .third::before{
+		content:"Quick Fit Screen Protector";
+		position:absolute;
+		top:0;
+		left:0;
+		height:40px;
+		line-height:40px;		
+		width:100%;
+		background:#f08200;	
+		color:#FFF;
+		text-align:center;		
+	}
+	.custom-option{
+		margin-bottom:30px;
+	}
+	.custom-option .custom-txt{
+		font-size:14px;
+	}
+	
+	.distributors .box{
+		font-size:14px;
+	}
+	
+	.distributors .advantages li{
+		font-size:14px;
+	}
+}

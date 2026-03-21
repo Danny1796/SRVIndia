@@ -1,0 +1,128 @@
+ section{overflow:hidden;}
+ h1 {color:#1d1d1d;text-transform:uppercase;text-align:center;font-size:30px;letter-spacing:2px;}
+.power-model {background:#F2F2F2;}
+.power-model .info {padding:40px;}
+.power-model .model {font-size:30px;line-height:2;}
+.power-model .name {font-size:24px;color:#999;}
+.power-model .icon {display:flex;margin:20px 0;}
+.power-model .icon i {display:block;border-radius:5px;margin-right:15px;width:45px;height:30px;}
+.power-model .icon i.green {background:url("../../images/portable-power-Station/green.svg") center no-repeat;background-color:#ec7506;}
+.power-model .icon i.led {background:url("../../images/portable-power-Station/led.svg") center no-repeat;background-color:#ec7506;background-size:auto 12px;}
+.power-model .icon i.quite {background:url("../../images/portable-power-Station/42.png") center no-repeat;background-color:#ec7506;background-size:auto 20px;}
+.power-model .icon i.sheild {background:url("../../images/portable-power-Station/43.png") center no-repeat;background-color:#ec7506;background-size:auto 20px;}
+.power-model .info ul li {line-height:2em;font-size:16px;color:#666;}
+.power-model .info ul li span {display:inline-block;width:100px;text-align:justify;}
+.swiper-pagination-dayn {margin:30px auto 0;text-align:Center;}
+.mySwiper2 .swiper-pagination-bullet {width:16px;height:16px;background:#F2F2F2;box-shadow:none;border:none!important;}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {margin:0 10px;}
+.mySwiper2 .swiper-pagination-bullet-active {background:var(--color_primary);box-shadow:none;}
+.what-text {font-size:18px;line-height:32px;margin:30px auto 60px;text-align:center;width:80%;color:#666;}
+.what-icons {display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;grid-gap:40px;align-items:center;margin-bottom:100px;}
+.what-icons li {text-align:center;}
+.what-icons li .icon {display:inline-block;width:45px;height:45px;text-align:center;margin:0 auto 20px;}
+.what-icons li .icon-text {font-size:16px;text-overflow:ellipsis;color:#666;}
+.first-recommend-bg {background:url("../../images/portable-power-Station/02_04.jpg") center no-repeat;background-size:cover;}
+.second-recommend-bg {background:url("../../images/portable-power-Station/02_20.jpg") center no-repeat;background-size:cover;}
+.product-recommend {color:#FFF;text-align:center;}
+.recommend-heading {font-size:40px;font-weight:bold;padding:80px 0 20px;}
+.recommend-subheading {font-size:32px;line-height:1.5;}
+.recommend-model {font-size:18px;margin:10px 0 50px;}
+.sku-info {display:flex;flex-direction:row;justify-content:center;align-items:center;}
+.sku-info .info {width:200px;text-align:center;margin-bottom:400px;font-weight:bold;line-height:1.5;}
+.sku-info .info span {display:block;font-size:16px;font-weight:normal;font-weight:#666;}
+.sku-info .info:first-child {border-right:1px solid #FFF;}
+.power-scenario h3 {font-size:40px;line-height:50px;margin-top:0;text-align:center;margin:100px 0 20px;}
+.power-scenario .box-text {font-size:18px;text-align:center;color:#666;}
+.power-scenario .box-img {margin:70px 0 130px;display:flex;background-color:#F2F2F2;}
+.power-scenario .box-img .img {width:50%;}
+.power-scenario .box-img .sub-text {width:50%;padding:90px 90px 0;color:#666;}
+.power-scenario .box-img .sub-text .t {font-size:32px;color:#000;}
+.power-scenario .box-img .sub-text p {font-size:18px;margin:50px 0;}
+.power-scenario .box-img .sub-text ul {display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-gap:20px;align-items:center;}
+.power-scenario .box-img .sub-text ul li {text-align:center;}
+.power-scenario .box-img .sub-text ul li .icon img {height:40px;}
+.power-scenario .box-img .sub-text ul li .icon-text {line-height:2em;font-weight:lighter;text-transform:uppercase;font-size:14px;}
+.power-scenario .more {color:var(--color_primary);}
+.power-scenario .more:before {content:">>";margin:0 5px;display:inline-block;}
+.outdoor-bg h3 {font-size:40px;text-align:center;margin:90px 0 40px;}
+.outdoor-bg .sub-text {text-align:center;margin-bottom:50px;}
+.outdoor-live {background:url("../../images/portable-power-Station/02_27.jpg") center no-repeat;background-size:cover;}
+.outdoor-live .text-box {padding:150px 0;color:#FFF;text-align:right;}
+.outdoor-live .text-box h4 {font-size:40px;margin-bottom:30px;text-transform:uppercase;color:#FFF;}
+.outdoor-live .text-box P {color:#FFF;line-height:2em;margin-bottom:0;}
+.pic-box {margin:100px 0;}
+.pic-box .img-box1 {position:relative;}
+.pic-box .img-box1 img {display:block;}
+.pic-box .img-box1 .img-box1-text {position:absolute;left:90px;bottom:50px;}
+.pic-box .img-box1 .img-box1-text h3 {font-size:36px;text-transform:uppercase;line-height:2em;color:#FFF;}
+.pic-box .img-box1 .img-box1-text p {text-transform:uppercase;font-size:16px;line-height:1.5em;color:#FFF;}
+.pic-box .img-box2 {display:flex;}
+.pic-box .img-box2 .img-box2-sub {position:relative;width:50%;}
+.pic-box .img-box2 .img-box2-sub img {display:block;width:100%;}
+.pic-box .img-box2 .img-box2-sub .img-box2-text {position:absolute;left:80px;bottom:80px;color:#FFF;font-size:24px;line-height:1.5em;text-transform:uppercase;}
+.scenes-bg {position:relative;}
+.wrapper {position:relative;}
+.negative-top {margin-top:-200px;}
+.duration {border-radius:50px;padding:40px 60px;box-shadow:15px 0 57px #2d2d2d;background:RGBA(255,255,255,.7);}
+.duration .duration-flex {display:flex;flex-wrap:nowrap;width:100%;border-bottom:1px solid #DDD;}
+.duration .duration-flex.bg:hover {background:#FBFBFB;}
+.duration .duration-flex li {flex-grow:1;text-align:center;padding:30px;width:14%;flex-shrink:0;}
+.duration .duration-flex li .num {font-size:28px;line-height:60px;color:#666;}
+.duration .duration-flex li span {display:block;line-height:2em;font-size:14px;white-space:nowrap;text-overflow:ellipsis;}
+.note {color:#999;font-size:14px;line-height:2em;margin-top:50px;margin-bottom:200px;}
+.text-how {font-size:18px;line-height:32px;margin:100px auto;color:#666}
+@media only screen and (max-width:1279px) {
+.power-model .item .info {padding:30px;}
+.power-model .item .model {font-size:24px;}
+.power-model .item .name {font-size:18px;}
+.power-scenario .box-img .sub-text {padding:30px;}
+.what-text {font-size:16px;}
+.power-scenario .box-img .sub-text .t {font-size:24px;}
+.power-scenario .box-img .sub-text p {font-size:14px;margin:40px 0 20px;}
+.power-scenario .box-img .sub-text ul li .icon img {height:50px;}
+.power-scenario .box-img .sub-text ul li .icon-text {font-size:12px;white-space:nowrap;}
+}
+@media only screen and (max-width:1000px) {
+.power-scenario .box-img {margin:70px 0;}
+.power-scenario .box-img {flex-direction:column;}
+.power-scenario .box-img .img img {width:100%;}
+.power-scenario .box-img .img,.power-scenario .box-img .sub-text {width:100%;}
+.duration .duration-flex li .num{font-size:24px;line-height:48px;}
+}
+@media only screen and (max-width:768px) {
+.negative-top{ margin-top: -30px;}	
+.scenes-bg {overflow:hidden;width:100%;}
+.scenes-bg .bg-wrapper{z-index: -1; overflow: hidden; margin:0 -12.5%;}
+.power-model .model {font-size:24px;}
+.power-model .name {font-size:18px;}
+.what-icons {display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:40px;align-items:center;margin-bottom:100px;}
+.what-icons li .icon-text{font-size:14px;}
+.what-text {font-size:14px;width:100%;}
+h1 {font-size:24px;}
+.product-recommend,.recommend-heading {font-size:24px;}
+.recommend-subheading {font-size:18px;}
+.power-scenario h3 {font-size:24px;}
+.outdoor-live .text-box h4 {font-size:24px;}
+.outdoor-live .text-box P {font-size:14px;}
+.pic-box .img-box2 {flex-direction:column;}
+.pic-box .img-box2 .img-box2-sub {width:100%;}
+.pic-box .img-box1 .img-box1-text h3 {font-size:24px;}
+.outdoor-bg h3 {font-size:24px;}
+.pic-box .img-box1 .img-box1-text {left:0;top:0;padding:50px;width:100%;}
+.pic-box .img-box2 .img-box2-sub .img-box2-text {left:0;top:0;padding:50px;width:100%;font-weight:bold;}
+.duration{padding: 20px 30px;overflow: scroll;border-radius: 20px;}
+.duration .duration-flex{border-bottom:none;}
+.duration .duration-flex li{width:120px;padding:20px;font-size:12px;border-bottom: 1px solid #DDD;}
+.duration .duration-flex img{width:40px;}
+.note{margin-bottom:120px;}
+.text-how{font-size:14px;}
+}
+@media only screen and (max-width:480px) {
+.power-model .info {padding:20px;}
+.power-model .info ul li {font-size:14px;}
+.what-icons {display:grid;grid-template-columns:1fr 1fr;grid-gap:40px;align-items:center;margin-bottom:100px;}
+.what-icons {grid-template-columns:1fr 1fr;}
+.what-icons li .icon-text {white-space:wrap;}
+.power-scenario .box-img .sub-text ul {grid-template-columns:1fr 1fr;}
+.pic-box .img-box2 .img-box2-sub .img-box2-text {font-size:18px;}
+}

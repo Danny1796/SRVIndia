@@ -25,16 +25,19 @@ $(function () {
 	$(".mobile-nav-close").click(function () {
 		$(".mobile-container").removeClass("open");
 		$(".switch-toggle").removeClass("open");
+		$("body").removeClass('no-scroll')
 	})
 
 	$(".mobile-container .mask").click(function () {
 		$(".mobile-container").removeClass("open");
 		$(".switch-toggle").removeClass("open");
+		$("body").removeClass('no-scroll')
 	})
 
 	$(".switch-toggle").click(function () {
 		$(this).toggleClass("open");
 		$(".mobile-container").toggleClass("open");
+		$("body").toggleClass('no-scroll')
 	})
 
 	$(".expand").click(function () {
@@ -47,7 +50,7 @@ $(function () {
 		$(this).closest('li').find('.triple').slideToggle();
 	})
 
-	//动画初始
+	//
 	new WOW().init();
 
 	$('.video-list li').click(function () {

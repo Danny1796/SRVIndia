@@ -7,7 +7,8 @@
     -webkit-font-smoothing: antialiased;
     font-style: normal;
     font-family: "Kumbh Sans", Helvetica, Arial, sans-serif;
-    font-size: 0.9375rem;
+    font-size: 16px !important;
+        /*0.9375rem;*/
     line-height: 1.733;
 }
 
@@ -600,7 +601,7 @@ header {
     }
 
     .new-arrival .new-arrival-txt .heading {
-        font-size: 32px;
+        font-size: 32px !important;
     }
 
     .new-arrival .new-arrival-txt .description {
@@ -663,7 +664,7 @@ header {
             }
 
     .index-video h3 {
-        font-size: 44px;
+        font-size: 44px!important;
         line-height: 1;
         margin: 0;
     }
@@ -713,7 +714,7 @@ header {
 }
 
     .index-culture .heading {
-        font-size: 44px;
+        font-size: 44px!important;
         font-weight: bold;
     }
 
@@ -834,7 +835,7 @@ header {
             margin-left: 10px;
         }
 /* Professional Footer Styles */
-footer {
+/*footer {
     background: linear-gradient(135deg, #f6f1f1 0%, #f4f3f3 100%);
     border-top: 4px solid #f59e2d;
     box-shadow: 0 -4px 20px rgba(245, 158, 45, 0.1);
@@ -931,7 +932,7 @@ footer {
 
         footer .foot-tel:hover {
             color: #f59e2d;
-        }
+        }*/
 
 /* Social Icons Enhancement */
 .social-contact {
@@ -975,11 +976,11 @@ footer {
 }
 
 /* Remove unused styles */
-footer .b1 ul,
+/*footer .b1 ul,
 footer .text,
 footer .qrcode {
     display: none;
-}
+}*/
 
 .lxdh {
     position: fixed;
@@ -2023,8 +2024,8 @@ article:hover .img img {
     }
 
     .mission-text .text-group {
-        color: #999;
-        font-size: 16px;
+        color: #999 !important;
+        font-size: 16px !important;
     }
 
 .mission-wrapper:nth-child(2n) .mission-text {

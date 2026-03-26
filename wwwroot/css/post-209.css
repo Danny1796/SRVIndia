@@ -16157,56 +16157,7 @@ body.rtl .elementor-9879 .elementor-element.elementor-element-4768aba {
     }
 }
 
-.elementor-kit-209 {
-    --e-global-color-primary: #23282D;
-    --e-global-color-secondary: #54595F;
-    --e-global-color-text: #23282D;
-    --e-global-color-accent: #61CE70;
-    --e-global-color-4ebf39b: #F3FAFF;
-    --e-global-color-cd7ce4c: #F2F7EF70;
-    --e-global-color-389b532: #00000020;
-    --e-global-color-3275088: #FFB519;
-    --e-global-color-e59da1d: #5B113F;
-    --e-global-typography-primary-font-family: "Kumbh Sans";
-    --e-global-typography-primary-font-weight: 500;
-    --e-global-typography-secondary-font-family: "Kumbh Sans";
-    --e-global-typography-secondary-font-weight: 500;
-    --e-global-typography-text-font-family: "Kumbh Sans";
-    --e-global-typography-text-font-weight: 500;
-    --e-global-typography-accent-font-family: "Kumbh Sans";
-    --e-global-typography-accent-font-weight: 500;
-    --e-global-typography-accent-text-transform: uppercase;
-    --e-global-typography-cc99100-font-family: "Kumbh Sans";
-    --e-global-typography-cc99100-font-size: 45px;
-    --e-global-typography-cc99100-font-weight: 900;
-    --e-global-typography-cc99100-font-style: italic;
-    --e-global-typography-cc99100-letter-spacing: 1px;
-    --e-global-typography-d12a8f6-font-family: "Kumbh Sans";
-    --e-global-typography-d12a8f6-font-size: 1rem;
-    --e-global-typography-d12a8f6-font-weight: 500;
-    --e-global-typography-d12a8f6-text-transform: none;
-    --e-global-typography-8e932ea-font-family: "Kumbh Sans";
-    --e-global-typography-8e932ea-font-size: 1.4rem;
-    --e-global-typography-8e932ea-font-weight: 600;
-    --e-global-typography-47f04a3-font-family: "Kumbh Sans";
-    --e-global-typography-47f04a3-font-size: 1.2rem;
-    --e-global-typography-47f04a3-font-weight: 500;
-    --e-global-typography-47f04a3-text-transform: uppercase;
-    --e-global-typography-a5202a4-font-family: "Kumbh Sans";
-    --e-global-typography-a5202a4-font-weight: 600;
-    --e-global-typography-7351ccf-font-family: "Kumbh Sans";
-    --e-global-typography-7351ccf-font-size: 1.8rem;
-    --e-global-typography-7351ccf-font-weight: 500;
-    --e-global-typography-6a53c5a-font-family: "Kumbh Sans";
-    --e-global-typography-6a53c5a-font-size: 0.975rem;
-    --e-global-typography-6a53c5a-font-weight: 500;
-    --e-global-typography-29bf05a-font-family: "Kumbh Sans";
-    --e-global-typography-29bf05a-font-size: 1.9rem;
-    --e-global-typography-f00c42f-font-family: "Kumbh Sans";
-    --e-global-typography-f00c42f-font-size: 1.8rem;
-    --e-global-typography-f00c42f-font-weight: 500;
-    font-size: 16px;
-}
+
 
     .elementor-kit-209 e-page-transition {
         background-color: #FFBC7D;

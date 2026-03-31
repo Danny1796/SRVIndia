@@ -20306,9 +20306,14 @@ header {
             background-color: #ddd
         }
 
-.size20 {
+.size20 span{
     font-size: 20px!important;
-    line-height: 15p!important
+    line-height: 15px!important;
+}
+
+.font_15 span {
+    font-size: 15px !important;
+    line-height: 15px !important;
 }
 
 .size16 {
@@ -20346,7 +20351,7 @@ header {
 }
 
 .size12 {
-    font-size: 12px
+    font-size: 12px!important;
 }
 
 .videoBox {
@@ -21032,7 +21037,7 @@ element.style {
 }
 
 @media screen and (max-width:1480px) {
-    .size20 {
+    .size20 span{
         font-size: 18px;
         line-height: 28px
     }
@@ -21122,7 +21127,7 @@ element.style {
 }
 
 @media screen and (max-width:1280px) {
-    .size20 {
+    .size20>span{
         font-size: 16px;
         line-height: 26px
     }

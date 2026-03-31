@@ -24,7 +24,7 @@ body {*/
 /*Footer css*/
 .footer_wrap {
     background: #231f20;
-    font-family: Rubik;
+    font-family: "Kumbh Sans", Helvetica, Arial, sans-serif;
     padding: 0;
     position: relative;
     margin-top: 0;
@@ -97,23 +97,19 @@ footer a {
 }
 
 @media screen and (max-width: 1280px) {
-    .size20 {
+    .size20 span{
         font-size: 16px;
         line-height: 26px;
     }
 }
 
 @media screen and (max-width: 1480px) {
-    .size20 {
+    .size20 span{
         font-size: 18px;
         line-height: 28px;
     }
 }
 
-.size20 {
-    font-size: 20px;
-    line-height: 15px;
-}
 
 footer a {
     color: #85868a;

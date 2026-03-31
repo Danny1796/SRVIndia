@@ -7,7 +7,7 @@
     -webkit-font-smoothing: antialiased;
     font-style: normal;
     font-family: "Kumbh Sans", Helvetica, Arial, sans-serif;
-    font-size: 16px !important;
+    font-size: 16px;
         /*0.9375rem;*/
     line-height: 1.733;
 }
@@ -282,7 +282,6 @@ header {
 
         .mobile-nav-wrapper .sub-item-link .lib-sub .link {
             display: inline-block;
-            padding: 20px 0;
         }
 
         .mobile-nav-wrapper .sub-item-link .lib-sub .arrow {
@@ -408,8 +407,8 @@ header {
     white-space: nowrap;
 }
 
-.sub-nav-wrapper .sub-nav-text dd {
-    font-size: 13px;
+.sub-nav-wrapper .sub-nav-text dd .sub-nav-text dd a{
+    font-size: 13px !important;
     color: #666;
     line-height: 28px;
     white-space: wrap;
@@ -594,6 +593,7 @@ header {
 
     .new-arrival .new-arrival-txt, .new-arrival .new-arrival-pic {
         width: 50%;
+        margin-right: 12px;
     }
 
     .new-arrival .new-arrival-pic {
@@ -756,7 +756,7 @@ header {
 
 .wrapper-title {
     position: relative;
-    font-size: 44px;
+    font-size: 44px!important;
     font-weight: bold;
     color: #333;
     text-align: center;
@@ -963,17 +963,7 @@ header {
             box-shadow: 0 8px 25px rgba(245, 158, 45, 0.4);
         }
 
-/* Copyright */
-.copyright {
-    text-align: center;
-    color: #888;
-    font-size: 14px;
-    padding: 30px 60px 40px;
-    border-top: 1px solid #333;
-    margin-top: 40px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-}
+
 
 /* Remove unused styles */
 /*footer .b1 ul,
@@ -3534,12 +3524,6 @@ article:hover .img img {
     }
 }
 
-.copyright {
-    text-align: center;
-    color: #080808;
-    font-size: 15px;
-    margin-bottom: 80px 0 40px;
-}
 
 .social-contact {
     display: flex;
@@ -3787,4 +3771,12 @@ body {
     .desc {
         font-size: 12px;
     }
+}
+
+.elementor-heading-title h2 {
+    font-size: 17px !important;
+}
+
+.elementor-heading-title h3 {
+    font-size: 14px !important;
 }

@@ -349,6 +349,7 @@ li.product .si-product-thumb {
     --padding-right: 0px;
 }
 
+
 .elementor-widget-heading .elementor-heading-title {
     font-family: var( --e-global-typography-primary-font-family ), Sans-serif;
     font-weight: var( --e-global-typography-primary-font-weight );
@@ -367,7 +368,7 @@ li.product .si-product-thumb {
 
     .elementor-21412 .elementor-element.elementor-element-33d3de5 .elementor-heading-title {
         font-family: var( --e-global-typography-7351ccf-font-family ), Sans-serif;
-        font-size: var( --e-global-typography-7351ccf-font-size );
+        font-size: 14px;
         font-weight: var( --e-global-typography-7351ccf-font-weight );
     }
 
@@ -1265,18 +1266,6 @@ li.product .si-product-thumb {
 
 .elementor-21412 .elementor-element.elementor-element-4f62d26 > .elementor-widget-container {
     padding: 0px 0px 0px 0px;
-}
-
-.elementor-21412 .elementor-element.elementor-element-4f62d26 .elementor-heading-title {
-    font-family: var( --e-global-typography-8e932ea-font-family ), Sans-serif;
-    font-size: var( --e-global-typography-8e932ea-font-size );
-    font-weight: var( --e-global-typography-8e932ea-font-weight );
-}
-
-.elementor-21412 .elementor-element.elementor-element-a02fdf1 .elementor-heading-title {
-    font-family: var( --e-global-typography-6a53c5a-font-family ), Sans-serif;
-    font-size: var( --e-global-typography-6a53c5a-font-size );
-    font-weight: var( --e-global-typography-6a53c5a-font-weight );
 }
 
 .elementor-21412 .elementor-element.elementor-element-4424775 > .elementor-widget-container {
@@ -6948,13 +6937,6 @@ body.rtl .elementor-21412 .elementor-element.elementor-element-704153e {
         font-size: var( --e-global-typography-6a53c5a-font-size );
     }
 
-    .elementor-21412 .elementor-element.elementor-element-4f62d26 .elementor-heading-title {
-        font-size: var( --e-global-typography-8e932ea-font-size );
-    }
-
-    .elementor-21412 .elementor-element.elementor-element-a02fdf1 .elementor-heading-title {
-        font-size: var( --e-global-typography-6a53c5a-font-size );
-    }
 
     .elementor-21412 .elementor-element.elementor-element-6907d3d .elementor-heading-title {
         font-size: var( --e-global-typography-8e932ea-font-size );
@@ -7333,13 +7315,6 @@ body.rtl .elementor-21412 .elementor-element.elementor-element-704153e {
         font-size: var( --e-global-typography-6a53c5a-font-size );
     }
 
-    .elementor-21412 .elementor-element.elementor-element-4f62d26 .elementor-heading-title {
-        font-size: var( --e-global-typography-8e932ea-font-size );
-    }
-
-    .elementor-21412 .elementor-element.elementor-element-a02fdf1 .elementor-heading-title {
-        font-size: var( --e-global-typography-6a53c5a-font-size );
-    }
 
     .elementor-21412 .elementor-element.elementor-element-6907d3d .elementor-heading-title {
         font-size: var( --e-global-typography-8e932ea-font-size );
@@ -7744,14 +7719,6 @@ body.rtl .elementor-21412 .elementor-element.elementor-element-704153e {
 
     .elementor-21412 .elementor-element.elementor-element-6220dc8 {
         --e-n-carousel-swiper-slides-to-display: 2;
-    }
-
-    .elementor-21412 .elementor-element.elementor-element-4f62d26 .elementor-heading-title {
-        font-size: var( --e-global-typography-8e932ea-font-size );
-    }
-
-    .elementor-21412 .elementor-element.elementor-element-a02fdf1 .elementor-heading-title {
-        font-size: var( --e-global-typography-6a53c5a-font-size );
     }
 
     .elementor-21412 .elementor-element.elementor-element-6907d3d .elementor-heading-title {
@@ -8276,13 +8243,6 @@ body.rtl .elementor-21412 .elementor-element.elementor-element-704153e {
         --e-n-carousel-swiper-slides-to-display: 1;
     }
 
-    .elementor-21412 .elementor-element.elementor-element-4f62d26 .elementor-heading-title {
-        font-size: var( --e-global-typography-8e932ea-font-size );
-    }
-
-    .elementor-21412 .elementor-element.elementor-element-a02fdf1 .elementor-heading-title {
-        font-size: var( --e-global-typography-6a53c5a-font-size );
-    }
 
     .elementor-21412 .elementor-element.elementor-element-6907d3d .elementor-heading-title {
         font-size: var( --e-global-typography-8e932ea-font-size );

@@ -31,7 +31,7 @@
                 <span></span>
             </div>
             <div class="logo">
-                <a href="index.html"><img src="~/images/logosrv1.png" alt="SRV Mobile Phone Accessories Wholesale"></a>
+                <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/SRVLogo.png" alt="SRV Mobile Phone Accessories Wholesale"></a>
             </div>
             <nav class="pc-nav" role="navigation">
 
@@ -43,10 +43,10 @@
                         <a href="#" role="button">PRODUCTS</a>
                         <div class="sub-nav-wrapper">
                             <div class="wrapper">
-                                <div class="sub-nav-box">
+                                <div class="sub-nav-box" style="text-align:left;">
                                     <div class="sub-box">
                                         <dl class="sub-nav-text">
-                                            <dt><a href="Screen-Protector/index.html">Screen Protector</a></dt>
+                                            <dt><a href="#">Screen Protector</a></dt>
                                             <dd><a href="#" title="Explore all ultra guard">Ultra Guard</a></dd>
                                             <dd><a href="#" title="Explore all Matt Guard guard">Matt Guard</a></dd>
                                             <dd><a href="#" title="Explore all privacy glass">Privacy Guard</a></dd>
@@ -239,35 +239,34 @@
                             <a href="#" class="link expand" title="Partner with SRV India and become an agent">MEDIA</a><i class="arrow expand"></i>
                         </div>
                         <ul class="son-box">
-                            <li class="sub-item-link"><div class="lib-sub"><a href="Videos/index.html" title="Videos" class="link">Videos</a></div></li>
-                            <li class="sub-item-link"><div class="lib-sub"><a href="News/index.html" title="Latest Srv product announcements" class="link">News</a></div></li>
-                            <li class="sub-item-link">
-                            </ul>
-                        </li>
-                        <!--<li class="sub-item-link"><div class="lib-sub"><a href="Videos/index.html"  title="Videos" class="link">Videos</a></div></li>
+                            <li class="sub-item-link"><div class="lib-sub"><a href="#" title="Videos" class="link">Videos</a></div></li>
+                            <li class="sub-item-link"><div class="lib-sub"><a href="#" title="Latest Srv product announcements" class="link">News</a></div></li>
+                        </ul>
+                    </li>
+                    <!--<li class="sub-item-link"><div class="lib-sub"><a href="Videos/index.html"  title="Videos" class="link">Videos</a></div></li>
 			<li class="sub-item-link"><div class="lib-sub"><a href="News/index.html"  title="Latest Srv product announcements" class="link">News</a></div></li>		-->
 			
-                        <li class="sub-item-link">
-                            <div class="lib-sub">
-                                <a href="Videos/index.html" class="link expand" title="Partner with SRV India and become an agent">MOBILE ACCESSORIES</a><i class="#"></i>
-                            </div>
-                            <!--<ul class="son-box">
+                    <li class="sub-item-link">
+                        <div class="lib-sub">
+                            <a href="#" class="link expand" title="Partner with SRV India and become an agent">MOBILE ACCESSORIES</a><i class="#"></i>
+                        </div>
+                        <!--<ul class="son-box">
 					<li><a href="../Why-joining-us/index.html" class="son-sub" title="Why Joining Us" >Why Joining Us</a></li>
 					<li><a href="../Become-agent/index.html#support" class="son-sub" title="Business Type">How We Support</a></li>
 					<li><a href="../Become-agent/index.html#type" class="son-sub" title="Business Type">Business Type</a></li>
 				</ul>-->
-                        </li>
-                        <li class="sub-item-link"><div class="lib-sub"><a href="Contact-Us/index.html" title="Contact SRV India team" class="link">CONTACT</a></div></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="mask"></div>
+                    </li>
+                    <li class="sub-item-link"><div class="lib-sub"><a asp-area="" asp-controller="Home" asp-action="ContactUs" title="Contact SRV India team" class="link">CONTACT</a></div></li>
+                </ul>
+            </nav>
         </div>
-        <div>
-            @RenderBody()
-        </div>
+        <div class="mask"></div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
 
-        @* <footer>
+    @* <footer>
             <div class="footer-inner flex">
                 <div class="b1">
                     <div class="footer-logo">
@@ -348,101 +347,88 @@
                     <p>© SRV India, 2026 | All rights reserved.</p>
                 </div>
             </footer> *@
-
-        <footer class="footer_wrap">
-            <div class="clearfix"></div>
-            <div class="col-md-12">
-                <div class="footerWrap">
-                    <div class="col-md-8">
-                        <div class="footSeparate">
-                        </div><div class="row">
-                        <div class="col-md-3 col-xs-6">
-                            <div class="footerNavWrap wow fadeIn" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                                <a class="footer_nav-item size20 underline" href="#">
-                                    <span>Our Products</span>
-                                </a><!----><!---->
-                                <a class="footer_nav-item font_15 ng-star-inserted" href="#">
-                                    <span>Earphones</span>
-                                </a><!---->
-                                <a class="footer_nav-item font_15 ng-star-inserted" href="#">
-                                    <span>Headsets</span>
-                                </a><!---->
-                                <a class="footer_nav-item font_15 ng-star-inserted" href="#">
-                                    <span>Speakers</span>
-                                </a><!---->
-                                <a class="footer_nav-item font_15 ng-star-inserted" href="#">
-                                    <span>Computer Peripherals</span>
-                                </a><!---->
-                                <a class="footer_nav-item font_15 ng-star-inserted" href="#">
-                                    <span>Laptop Bags</span>
-                                </a><!---->
-                                <a class="footer_nav-item font_15 ng-star-inserted" href="#">
-                                    <span>Mobile Accessories</span>
-                                </a><!---->
-                                <a class="footer_nav-item font_15 ng-star-inserted" href="#">
-                                    <span>Mic</span>
-                                </a>
-                            </div>
+    <footer class="footer_wrap">
+        <div class="clearfix"></div>
+        <div class="col-md-12">
+            <div class="footerWrap">
+                <div class="col-md-8">
+                    <div class="footSeparate">
+                    </div><div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footerNavWrap wow fadeIn" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                            <a class="footer_nav-item size20 underline" href="#">
+                                <span>Our Products</span>
+                            </a><!----><!---->
+                            <a class="footer_nav-item font_15 ng-star-inserted" href="#">
+                                <span>Screen Protectors</span>
+                            </a><!---->
+                            <a class="footer_nav-item font_15 ng-star-inserted" href="#">
+                                <span>Camera Lens</span>
+                            </a><!---->
+                            <a class="footer_nav-item font_15 ng-star-inserted" href="#">
+                                <span>Cutting Machines</span>
+                            </a><!---->
+                            <a class="footer_nav-item font_15 ng-star-inserted" href="#">
+                                <span>Hydrogel Film</span>
+                            </a><!---->
+                            <a class="footer_nav-item font_15 ng-star-inserted" href="#">
+                                <span>Nano Film</span>
+                            </a><!---->
+                            <a class="footer_nav-item font_15 ng-star-inserted" href="#">
+                                <span>Anti Slip Pad</span>
+                            </a><!---->
+                            <a class="footer_nav-item font_15 ng-star-inserted" href="#">
+                                <span>Back Skin</span>
+                            </a>
                         </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="footerNavWrap wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                                <a class="footer_nav-item size20 underline" href="javascript:void(0);"><span>About SRV INDIA</span></a>
-                                <a class="footer_nav-item font_15" href="/our-story"><span>Our Story</span></a>
-                                <a class="footer_nav-item font_15" href="/career"><span>Work at SRV INDIA</span></a>
-                                <a class="footer_nav-item font_15" href="/press-release"><span>Press Release</span></a>
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footerNavWrap wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                            <a class="footer_nav-item size20 underline" href="javascript:void(0);"><span>About SRV INDIA</span></a>
+                            <a class="footer_nav-item font_15" asp-area="" asp-controller="Home" asp-action="AboutUs"><span>Who We Are</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>Our Mission</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>SRV Culture</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>Why Choose SRV</span></a>
                         </div>
-                        <div class="clear_fix_640"></div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="footerNavWrap wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                                <a class="footer_nav-item size20 underline" href="javascript:void(0);"><span>Policies</span></a>
-                                <a class="footer_nav-item font_15" href="/privacy-policy"><span>Privacy</span></a>
-                                <a class="footer_nav-item font_15" href="/warranty"><span>Warranty</span></a>
-                                <a class="footer_nav-item font_15" href="/e-waste"><span>E-Waste</span></a>
-                                <a class="footer_nav-item font_15" href="/cookie-declaration"><span>Cookies Declaration</span></a>
-                                <a class="footer_nav-item font_15" href="/terms-of-use"><span>Terms Of Use</span></a>
-                            </div>
+                    </div>
+                    <div class="clear_fix_640"></div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footerNavWrap wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                            <a class="footer_nav-item size20 underline" href="javascript:void(0);"><span>Policies</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>Privacy</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>Warranty</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>E-Waste</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>Cookies Declaration</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>Terms Of Use</span></a>
                         </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="footerNavWrap wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                                <a class="footer_nav-item size20 underline" href="javascript:void(0);"><span>Get In Touch</span></a>
-                                <a class="footer_nav-item font_15" href="/contact-us"><span>Contact Us</span></a>
-                                <a class="footer_nav-item font_15" href="/service-centers"><span>Service Centres</span></a>
-                                <a class="footer_nav-item font_15" href="/register-my-product"><span>Register your product</span></a>
-                                <a class="footer_nav-item font_15" href="/luckydraw"><span>Lucky Draw Winners</span></a>
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footerNavWrap wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                            <a class="footer_nav-item size20 underline" href="javascript:void(0);"><span>Quick Links</span></a>
+                            <a class="footer_nav-item font_15" asp-area="" asp-controller="Home" asp-action="Index"><span>Home</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>Products</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>Machines</span></a>
+                            <a class="footer_nav-item font_15" asp-area="" asp-controller="Home" asp-action="ContactUs"><span>Contact Us</span></a>
+                            <a class="footer_nav-item font_15" href="#"><span>Become a Distributor</span></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="relative">
-                            <div class="footerVCenter wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                                <a class="logoFooter" routerlink="/" href="/">
-                                    <img alt="SRV logo" src="~/images/logosrv1.png" width="225">
-                                    </a>
-                                    <div class="clearfix"></div>
-                                    <div class="clearfix">
-                                    </div>
-                                    <div class="social">
-                                        <a class="social_item" href="tel:'02249387600'">
-                                            <i class="fab fa-phone"></i>
-                                        </a>
-                                        <a class="social_item" href="#">
-                                            <i class="fab fa-envelope"></i>
-                                        </a>
-                                        <a class="social_item sperate" href="https://wa.me/919920216620" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                        <a class="social_item -fb" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="social_item -in" href="https://www.instagram.com/srvindia" target="_blank"><i class="fab fa-instagram"></i></a>
-                                        <a class="social_item -ig" href="https://x.com/srvindia" target="_blank">
-                                            <div class="font-like-icon">
-                                                <span><img src="assets/images/X-White.png"></span><span class="hover">
-                                                <img src="assets/images/X-White.png">
-                                            </span>
-                                        </div>
-                                    </a>
-                                    <a class="social_item -in" href="https://www.youtube.com/channel/UCpjVzIFi8pobKy3DC6kyk8w?guided_help_flow=3" target="_blank"><i class="fab fa-youtube"></i></a>
-                                    <a class="social_item -tw" href="https://www.linkedin.com/company/dynamic-conglomerate/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="relative">
+                        <div class="footerVCenter wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                            <a class="logoFooter" routerlink="/" href="/">
+                                <img alt="SRV logo" src="~/images/SRVLogo.png" width="225">
+                                </a>
+                                <div class="clearfix"></div>
+                                <div class="clearfix"></div>
+                                    
+                                <div class="footer-slogan" style="padding-top:25px; color: rgba(255, 255, 255, .7);">
+                                    <p>LH-111,2nd Floor, The Platinum Mall,Pathe Bapurao Marg,</p>
+                                    <p>Grand Road (East), Mumbai-400004.</p>
+                                    <p>Contact@srvindia.co.in</p>
+                                    <p>+919920216620</p>
                                 </div>
                             </div>
                         </div>
@@ -452,12 +438,28 @@
             </div>
         </div><div class="col-md-12">
         <div class="footer_row">
-            <p class="copyright wpw fadeIn size12" data-wow-delay="0.3s"> All rights are reserved by SRV India. Copyright  2026 by SRV INDIA. </p>
+            <div class="social" style="text-align:center;">
+                <a class="social_item" href="tel:+919920216620">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a class="social_item" href="mailto:contact@srvindia.co.in">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a class="social_item sperate" href="https://wa.me/919920216620" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a class="social_item -fb" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="social_item -in" href="https://www.instagram.com/srvindia" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="social_item -ig" href=" https://x.com/srvindia_" target="_blank" title="Follow on Twitter">
+                    <span class="twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </span>
+                </a>
+                <a class="social_item -in" href="https://www.youtube.com/@@SRVINDIA-A" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright wpw fadeIn size12" data-wow-delay="0.3s"> &copy;SRV India,2026 | All Rights Reserved. </p>
         </div>
     </div>
     <div class="clearfix"></div>
 </footer>
-
 	
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

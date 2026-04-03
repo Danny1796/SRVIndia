@@ -1,0 +1,44 @@
+﻿@model IEnumerable<SRVIndia.Models.Enquiries>
+
+@{
+    ViewData["Title"] = "All Enquiries";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Submitted Enquiries</h2>
+        <a asp-action="Create" class="btn btn-success">Add New Enquiry</a>
+    </div>
+
+    <table class="table table-striped table-hover border">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Company</th>
+                <th>Business Type</th>
+                <th>Message</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.PersonName</td>
+                    <td>@item.UserEmail</td>
+                    <td>@item.CompanyName</td>
+                    <td>@item.BusinessType</td>
+                    <td>
+                        @(item.UserMessage?.Length > 50 ? item.UserMessage.Substring(0, 47) + "..." : item.UserMessage)
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">View</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

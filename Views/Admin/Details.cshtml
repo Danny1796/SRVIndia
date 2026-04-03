@@ -1,0 +1,47 @@
+﻿@model SRVIndia.Models.Enquiries;
+
+@{
+    ViewData["Title"] = "Enquiry Details";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">Enquiry Details - #@Model.Id</h4>
+            <a asp-action="Index" class="btn btn-light btn-sm">Back to List</a>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Full Name</dt>
+                <dd class="col-sm-9">@Model.PersonName</dd>
+
+                <dt class="col-sm-3">Email Address</dt>
+                <dd class="col-sm-9">
+                    <a href="mailto:@Model.UserEmail">@Model.UserEmail</a>
+                </dd>
+
+                <dt class="col-sm-3">Company</dt>
+                <dd class="col-sm-9">@(string.IsNullOrEmpty(Model.CompanyName) ? "N/A" : Model.CompanyName)</dd>
+
+                <dt class="col-sm-3">WhatsApp No</dt>
+                <dd class="col-sm-9">@Model.WhatsAppNo</dd>
+
+                <dt class="col-sm-3">Business Type</dt>
+                <dd class="col-sm-9">@Model.BusinessType</dd>
+
+                <dt class="col-sm-3">Cargo Use</dt>
+                <dd class="col-sm-9">@Model.UseCargo</dd>
+
+                <hr class="col-12" />
+
+                <dt class="col-sm-3">User Message</dt>
+                <dd class="col-sm-9 bg-light p-3 border rounded">
+                    @Model.UserMessage
+                </dd>
+            </dl>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-action="Index" class="btn btn-secondary">Close</a>
+        </div>
+    </div>
+</div>

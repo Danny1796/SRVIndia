@@ -1,0 +1,195 @@
+﻿@{
+    ViewData["Title"] = "Our Culture";
+}
+
+<!-- ✅ CSS -->
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fb;
+    }
+
+    /* 🔥 HERO BANNER */
+    .culture-hero {
+        background: linear-gradient(135deg, #e27c16, #feb47b);
+        color: white;
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+        .culture-hero h1 {
+            font-size: 3.8rem;
+        }
+
+        .culture-hero p {
+            font-size: 2.2rem;
+            opacity: 0.9;
+        }
+
+    /* Container */
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px 0px;
+    }
+
+    /* Tagline */
+    .tagline {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 30px;
+    }
+
+    /* Grid */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    /* Card */
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+    /* Icon */
+    .icon {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    /* Title */
+    .card h3 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    /* Text */
+    .card p {
+        color: #555;
+        font-size: 1.95rem;
+    }
+
+    /* Quote */
+    .quote {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #555;
+    }
+</style>
+
+<!-- 🔥 HERO -->
+<div class="culture-hero">
+    <h1>Our Culture</h1>
+    <p>Driven by Passion, Powered by People</p>
+</div>
+
+<div class="container">
+
+    <!-- ✅ TAGLINE -->
+    <div class="tagline">
+        Together We Build, Together We Grow
+    </div>
+
+    <!-- ✅ INTRO -->
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        At <strong>SRV India</strong>, our culture reflects our mission of empowering the digital generation.
+        We foster an environment where <strong>innovation, quality, and strong relationships</strong> are at the core of everything we do.
+        Our team believes in collaboration, continuous learning, and delivering excellence every day.
+    </p>
+
+    <!-- ✅ CULTURE VALUES -->
+    <div class="grid" style="margin-top:40px;">
+
+        <div class="card">
+            <div class="icon">💡</div>
+            <h3>Innovation Mindset</h3>
+            <p>
+                We encourage creativity and new ideas to develop better products
+                and smarter solutions for our customers.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎯</div>
+            <h3>Customer First</h3>
+            <p>
+                Our customers are at the center of everything.
+                We strive to exceed expectations with quality and service.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤝</div>
+            <h3>Team Collaboration</h3>
+            <p>
+                We believe teamwork drives success.
+                Together, we achieve more and grow stronger.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📈</div>
+            <h3>Growth & Learning</h3>
+            <p>
+                Continuous improvement and learning help us stay ahead
+                in the fast-changing digital world.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Speed & Efficiency</h3>
+            <p>
+                We work with speed and precision to deliver products
+                quickly and reliably across markets.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌟</div>
+            <h3>Excellence</h3>
+            <p>
+                We aim for excellence in everything we do — from product
+                design to customer experience.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- ✅ QUOTE -->
+    <div class="quote">
+        “SRV – Power of Dream”
+    </div>
+
+</div>
+
+<!-- ✅ JS Animation -->
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".card").forEach((card, index) => {
+                card.style.opacity = "0";
+                card.style.transform = "translateY(20px)";
+
+                setTimeout(() => {
+                    card.style.transition = "0.5s";
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0)";
+                }, index * 150);
+            });
+        });
+    </script>
+}

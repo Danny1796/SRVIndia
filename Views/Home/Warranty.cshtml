@@ -1,0 +1,225 @@
+﻿@{
+    ViewData["Title"] = "Warranty Policy";
+}
+
+<!-- ✅ CSS -->
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f6fb;
+    }
+
+    /* 🔥 HERO */
+    .herow {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+        .herow h1 {
+            font-size: 2.8rem;
+        }
+
+    /* Container */
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px 0px;
+    }
+
+    /* Section */
+    .section {
+        margin-bottom: 40px;
+    }
+
+    /* Card */
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    /* Title */
+    .title {
+        font-size: 2.6rem;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    /* Text */
+    p {
+        color: #555;
+        font-size: 1.95rem;
+    }
+
+    .p {
+        color: white;
+        font-size: 1.95rem;
+    }
+
+    /* List */
+    ul {
+        padding-left: 20px;
+    }
+
+    /* Highlight Box */
+    .highlight {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    /* Button */
+    .btn {
+        margin-top: 15px;
+        display: inline-block;
+        padding: 10px 20px;
+        background: white;
+        color: #0072ff;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+</style>
+
+<!-- 🔥 HERO -->
+<div class="herow">
+    <h1>Warranty & Policy</h1>
+    <p class="p">SRV India – Quality You Can Trust</p>
+</div>
+
+<div class="container">
+
+    <!-- ✅ WARRANTY INTRO -->
+    <div class="section">
+        <div class="card">
+            <div class="title">Warranty on SRV Products</div>
+            <p>
+                At <strong>SRV India</strong>, we provide high-quality mobile accessories
+                including tempered glass, chargers, cables, and more.
+            </p>
+            <p>
+                Our products are tested for durability and performance. Warranty coverage
+                depends on product type and usage conditions.
+            </p>
+
+            <ul>
+                <li>Warranty against manufacturing defects</li>
+                <li>Does not cover physical damage or misuse</li>
+                <li>Applicable only with valid proof of purchase</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ✅ PRODUCT COVERAGE -->
+    <div class="section">
+        <div class="card">
+            <div class="title">Covered Products</div>
+            <ul>
+                <li>Tempered Glass (limited warranty)</li>
+                <li>Mobile Chargers & Adapters</li>
+                <li>USB Cables & Accessories</li>
+                <li>Earphones & Audio Devices</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ✅ INFORMATION COLLECTION -->
+    <div class="section">
+        <div class="card">
+            <div class="title">1. Information We Collect</div>
+
+            <p><strong>1.1 Mode of Collection</strong></p>
+            <p>
+                We collect your information directly from you through offline forms,
+                visits to our offices, events, or interactions with our services.
+            </p>
+
+            <p>
+                We may also collect data from third-party service providers to improve
+                our services, marketing, and communication with your consent.
+            </p>
+
+            <p><strong>1.2 Data We Process</strong></p>
+            <ul>
+                <li>Name, email address, mobile number</li>
+                <li>Device information, IP address, browser data</li>
+                <li>Usage data via cookies and tracking technologies</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ✅ USE OF INFO -->
+    <div class="section">
+        <div class="card">
+            <div class="title">2. Use of Information</div>
+
+            <ul>
+                <li>Provide and improve products/services</li>
+                <li>Customer support and communication</li>
+                <li>Marketing and promotional updates</li>
+                <li>Legal compliance and protection</li>
+                <li>Responding to customer queries</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ✅ LEGAL BASIS -->
+    <div class="section">
+        <div class="card">
+            <div class="title">3. Legal Basis</div>
+
+            <p><strong>Consent:</strong> You may withdraw consent anytime.</p>
+            <p><strong>Legitimate Interest:</strong> To improve services and security.</p>
+            <p><strong>Contract:</strong> To fulfill product/service agreements.</p>
+            <p><strong>Legal Obligation:</strong> Compliance with laws.</p>
+        </div>
+    </div>
+
+    <!-- ✅ DATA SHARING -->
+    <div class="section">
+        <div class="card">
+            <div class="title">4. Data Sharing</div>
+
+            <ul>
+                <li>Shared with authorized internal teams</li>
+                <li>Third-party service providers (with consent)</li>
+                <li>Government authorities when required by law</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ✅ CTA -->
+    <div class="highlight">
+        <h2>Need Help with Warranty?</h2>
+        <p>Contact SRV India support for product assistance and claims.</p>
+        <a asp-area=""asp-controller="Home" asp-action="ContactUs" class="btn">Contact Us</a>
+    </div>
+
+</div>
+
+<!-- ✅ JS ANIMATION -->
+@section Scripts {
+    <script>
+        document.querySelectorAll(".card").forEach((card, i) => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(20px)";
+
+            setTimeout(() => {
+                card.style.transition = "0.5s";
+                card.style.opacity = "1";
+                card.style.transform = "translateY(0)";
+            }, i * 120);
+        });
+    </script>
+}

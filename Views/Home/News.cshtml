@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "News";
+}
+
+<!-- ✅ MODERN CSS -->
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f5f7fb;
+    }
+
+    /* Hero */
+    .news-hero {
+        background: linear-gradient(135deg, #e27c16, #feb47b);
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+        .news-hero h1 {
+            font-size: 3.5rem;
+        }
+
+        .news-hero p{
+            font-size: 2.5rem;
+        }
+
+    /* Container */
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px 0px;
+    }
+
+    /* Grid */
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 25px;
+    }
+
+    /* Card */
+    .news-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Image */
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+    /* Content */
+    .news-content {
+        padding: 20px;
+    }
+
+    .news-date {
+        font-size: 0.9rem;
+        color: gray;
+        margin-bottom: 8px;
+    }
+
+    .news-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .news-content p {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    /* Button */
+    .read-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 15px;
+        background: #667eea;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+        .read-btn:hover {
+            background: #5a67d8;
+        }
+
+    /* Pagination */
+    .pagination {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+        .pagination a {
+            padding: 8px 12px;
+            margin: 3px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+        }
+
+            .pagination a.active {
+                background: #667eea;
+                color: white;
+            }
+</style>
+
+<!-- ✅ HERO -->
+<div class="news-hero">
+    <h1>Latest News & Updates</h1>
+    <p>Stay updated with SRV India</p>
+</div>
+
+<div class="container">
+
+    <!-- ✅ NEWS GRID -->
+    <div class="news-grid">
+
+        <!-- NEWS CARD -->
+        <div class="news-card">
+            <img src="/images/newssrv.jpeg" alt="SRV Launch">
+            <div class="news-content">
+                <div class="news-date">15 Feb 2026</div>
+                <h3>Grand Launch of SRV India in Mumbai</h3>
+                <p>
+                    SRV India officially launched its mobile accessories business in Mumbai,
+                    marking a new beginning in the wholesale market.
+                </p>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+        </div>
+
+        <!-- NEWS CARD -->
+        <div class="news-card">
+            <img src="/images/newssrv.jpeg" alt="Expo">
+            <div class="news-content">
+                <div class="news-date">21 Jan 2026</div>
+                <h3>SRV India at Mobile Expo 2026</h3>
+                <p>
+                    SRV India showcased its latest tempered glass and accessories at a major expo event.
+                </p>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+        </div>
+
+        <!-- NEWS CARD -->
+        <div class="news-card">
+            <img src="/images/newssrv.jpeg" alt="Expansion">
+            <div class="news-content">
+                <div class="news-date">10 Jan 2026</div>
+                <h3>Expanding Distribution Network</h3>
+                <p>
+                    We are expanding our wholesale network to multiple cities across India.
+                </p>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ✅ PAGINATION -->
+    <div class="pagination">
+        <a class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">Next</a>
+    </div>
+
+</div>
+
+<!-- ✅ JS Animation -->
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".news-card").forEach((card, index) => {
+                card.style.opacity = "0";
+                card.style.transform = "translateY(20px)";
+
+                setTimeout(() => {
+                    card.style.transition = "0.5s";
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0)";
+                }, index * 150);
+            });
+        });
+    </script>
+}

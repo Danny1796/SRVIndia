@@ -1,0 +1,230 @@
+﻿
+@{
+    ViewData["Title"] = "Whowe";
+}
+
+<!-- ✅ CSS -->
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f5f7fb;
+    }
+
+    /* Hero */
+    .about-hero {
+        background: linear-gradient(135deg, #e27c16, #feb47b);
+        color: white;
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+        .about-hero h1 {
+            font-size: 3.8rem;
+        }
+
+        .about-hero p {
+            font-size: 2.2rem;
+        }
+
+    /* Container */
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px 0px;
+    }
+
+    /* Sections */
+    .section {
+        margin-bottom: 50px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    /* Grid */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    /* Cards */
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    /* Stats */
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .stat-box {
+        margin: 15px;
+    }
+
+        .stat-box h2 {
+            color:;
+        }
+
+    /* Highlight 
+    .highlight {
+        color: lightgreen;
+        font-weight: bold;
+    }*/
+</style>
+
+<!-- ✅ HERO -->
+<div class="about-hero">
+    <h1>Who We Are</h1>
+    <p>SRV India – Your Trusted Mobile Accessories Wholesale Partner</p>
+</div>
+
+<div class="container">
+
+    <!-- ✅ ABOUT -->
+    <div class="section">
+        <div class="section-title">About SRV India</div>
+
+        <p>
+            <strong>SRV India</strong> is a fast-growing wholesale brand specializing in
+            <span class="highlight">mobile accessories and mobile protection glass</span>.
+            We provide a wide range of high-quality products designed to meet the needs of retailers, distributors, and wholesalers across India.
+        </p>
+
+        <p>
+            Our product range includes tempered glass, mobile covers, chargers, cables, earphones, and other essential accessories.
+            We focus on delivering <strong>premium quality, competitive pricing, and reliable supply</strong> to help our partners grow their business.
+        </p>
+    </div>
+
+    <!-- ✅ PRODUCTS -->
+    <div class="section">
+        <div class="section-title">Our Products</div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>📱 Tempered Glass</h3>
+                <p>All types of mobile screen protection glass with high durability and perfect fitting.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔌 Chargers & Cables</h3>
+                <p>Fast charging adapters and durable USB cables for all smartphone brands.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎧 Audio Accessories</h3>
+                <p>Earphones, headphones, and Bluetooth devices with clear sound quality.</p>
+            </div>
+
+            <div class="card">
+                <h3>📦 Mobile Covers</h3>
+                <p>Stylish and protective covers for all major smartphone models.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ BUSINESS TYPE -->
+    <div class="section">
+        <div class="section-title">Who We Serve</div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Retailers</h3>
+                <p>Providing bulk products at best prices to local mobile shops.</p>
+            </div>
+
+            <div class="card">
+                <h3>Distributors</h3>
+                <p>Supporting large-scale distribution networks across regions.</p>
+            </div>
+
+            <div class="card">
+                <h3>Wholesalers</h3>
+                <p>Reliable partner for bulk mobile accessories supply.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ STATS -->
+    <div class="section">
+        <div class="section-title">Our Growth</div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h2>500+</h2>
+                <p>Products</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>100+</h2>
+                <p>Clients</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>50+</h2>
+                <p>Cities Covered</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ WHY US -->
+    <div class="section">
+        <div class="section-title">Why Choose SRV India</div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>✔ Best Quality</h3>
+                <p>We ensure top-quality products with strict quality checks.</p>
+            </div>
+
+            <div class="card">
+                <h3>✔ Affordable Pricing</h3>
+                <p>Competitive wholesale rates for maximum profit margin.</p>
+            </div>
+
+            <div class="card">
+                <h3>✔ Fast Delivery</h3>
+                <p>Quick and reliable delivery across India.</p>
+            </div>
+
+            <div class="card">
+                <h3>✔ Trusted Brand</h3>
+                <p>Building long-term relationships with customers.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ✅ JS Animation -->
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".card").forEach((card, index) => {
+                card.style.opacity = "0";
+                card.style.transform = "translateY(20px)";
+
+                setTimeout(() => {
+                    card.style.transition = "0.5s";
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0)";
+                }, index * 150);
+            });
+        });
+    </script>
+}

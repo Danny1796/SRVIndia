@@ -30,7 +30,42 @@ namespace SRVIndia.Controllers
         {
             return View();
         }
-
+        public IActionResult Culture()
+        {
+            return View();
+        }
+        public IActionResult Whysrv()
+        {
+            return View();
+        }
+        public IActionResult News()
+        {
+            return View();
+        }
+        public IActionResult Videos()
+        {
+            return View();
+        }
+        public IActionResult Whowe()
+        {
+            return View();
+        }
+        public IActionResult Mission()
+        {
+            return View();
+        }
+        public IActionResult Machine()
+        {
+            return View();
+        }
+        public IActionResult EWaste()
+        {
+            return View();
+        }
+        public IActionResult Warranty()
+        {
+            return View();
+        }
         public IActionResult ContactUs()
         {
             return View();

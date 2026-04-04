@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "Videos";
+}
+
+<!-- ✅ MODERN CSS -->
+<style>
+    body {
+        background: #f5f7fb;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Hero Section */
+    .video-hero {
+        text-align: center;
+        padding: 30px 0px;
+        background: linear-gradient(135deg, #e27c16, #feb47b);
+        color: white;
+    }
+
+        .video-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .video-hero p {
+            font-size: 2.1rem;
+        }
+
+    /* Container */
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px 0px;
+    }
+
+    /* Section Title */
+    .section-title {
+        font-size: 1.5rem;
+        margin: 30px 0 15px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Grid Layout */
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    /* Video Card */
+    .video-card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        /* YouTube iframe */
+        .video-card iframe {
+            width: 100%;
+            height: 220px;
+        }
+
+        /* Instagram fix */
+        .video-card.insta {
+            padding: 10px;
+        }
+
+    /* Responsive */
+    media (max-width: 600px) {
+        .video-hero h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+<!-- ✅ HERO SECTION -->
+<div class="video-hero">
+    <h1> Our Media Gallery</h1>
+    <p>Explore our latest videos, reels and updates</p>
+</div>
+
+<div class="container">
+
+    <!-- ✅ YouTube Section -->
+    <div class="section-title">YouTube Videos</div>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/05gnEZyvcrw?si=nNKuZfocIYfUqYc7"
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/05gnEZyvcrw?si=nNKuZfocIYfUqYc7"
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- ✅ Instagram Section -->
+    <div class="section-title">Instagram Reels</div>
+
+    <div class="video-grid">
+        <div class="video-card insta">
+            <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/reel/DWTj4-IiAen/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA=="
+                        data-instgrm-version="14"></blockquote>
+
+        </div>
+
+        <div class="video-card insta">
+            <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/reel/DVvTYQKiC3f/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                        data-instgrm-version="14"></blockquote>
+        </div>
+    </div>
+
+</div>
+
+<!-- ✅ JS (Instagram Embed + small enhancement) -->
+@section Scripts {
+    <script async src="https://www.instagram.com/embed.js"></script>
+
+    <script>
+        // Optional: simple animation on load
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".video-card").forEach((card, index) => {
+                card.style.opacity = "0";
+                card.style.transform = "translateY(20px)";
+
+                setTimeout(() => {
+                    card.style.transition = "0.5s";
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0)";
+                }, index * 150);
+            });
+        });
+    </script>
+}

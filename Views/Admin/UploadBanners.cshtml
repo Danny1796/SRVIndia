@@ -1,0 +1,37 @@
+﻿@model SRVIndia.Models.MainBanners;
+
+@{
+    ViewData["Title"] = "MainBanners";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">Upload New Banner</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="UploadBanners" method="post" enctype="multipart/form-data">
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Banner Title</label>
+                            <input asp-for="BannerTitle" class="form-control" placeholder="Enter title..." required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Select Banner Image</label>
+                            <input type="file" name="bannerFile" class="form-control" accept="image/*" required />
+                            <small class="text-muted">Recommended size: 1920x600px</small>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">Upload and Save</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

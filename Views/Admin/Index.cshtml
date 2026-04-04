@@ -16,7 +16,9 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Company</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Product Name</th>
                 <th>Business Type</th>
                 <th>Message</th>
                 <th>Actions</th>
@@ -29,7 +31,9 @@
                     <td>@item.Id</td>
                     <td>@item.PersonName</td>
                     <td>@item.UserEmail</td>
-                    <td>@item.CompanyName</td>
+                    <td>@item.States</td>
+                    <td>@item.City</td>
+                    <td>@item.ProductName</td>
                     <td>@item.BusinessType</td>
                     <td>
                         @(item.UserMessage?.Length > 50 ? item.UserMessage.Substring(0, 47) + "..." : item.UserMessage)

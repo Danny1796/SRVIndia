@@ -112,7 +112,8 @@ header {
     width: 100%;
     height: auto;
     outline: none;
-    margin-top:10px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
     .logo img {
@@ -2286,6 +2287,8 @@ article:hover .img img {
 .contact-form .input-box .select-show {
     display: block;
     width: 100%;
+    max-height: 200px!important;
+    overflow: scroll!important;
 }
 
 .contact-form .input-form textarea {

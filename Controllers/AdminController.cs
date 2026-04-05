@@ -34,7 +34,7 @@ namespace SRVIndia.Controllers
             if (bannerFile != null && bannerFile.Length > 0)
             {
                 // 1. Define the folder path (wwwroot/images/banners)
-                string uploadDir = Path.Combine("images/banners");//_environment.WebRootPath
+                string uploadDir = Path.Combine(_environment.WebRootPath, "images/banners");
                 if (!Directory.Exists(uploadDir)) Directory.CreateDirectory(uploadDir);
 
                 // 2. Create a unique filename

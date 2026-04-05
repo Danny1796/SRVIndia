@@ -14,4 +14,5 @@ public class ApplicationDbContext : DbContext
 
     public DbSet<Enquiries> Enquiries { get; set; }
     public DbSet<MainBanners> MainBanners { get; set; }
+    public DbSet<Distributor> Distributors { get; set; }
 }

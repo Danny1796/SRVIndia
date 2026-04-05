@@ -1,0 +1,102 @@
+﻿@model SRVIndia.Models.Distributor
+
+@{
+    ViewData["Title"] = "Distributor";
+}
+<style>
+    .form-container {
+        max-width: 900px;
+        margin: 40px auto;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #333;
+        color: white;
+        border: none;
+        border-radius: 6px;
+    }
+</style>
+
+<div class="form-container">
+    <h3>Become a SRV India distributor by filling in your details</h3>
+
+    @if (ViewBag.Message != null)
+    {
+        <p style="color:green">@ViewBag.Message</p>
+    }
+
+    <form asp-action="Create" method="post">
+        <div class="grid">
+
+            <div>
+                <label>First Name *</label>
+                <input asp-for="FirstName" placeholder="Enter First Name" />
+            </div>
+
+            <div>
+                <label>Last Name *</label>
+                <input asp-for="LastName" placeholder="Enter Last Name" />
+            </div>
+
+            <div>
+                <label>Email *</label>
+                <input asp-for="Email" placeholder="Enter Email" />
+            </div>
+
+            <div>
+                <label>Mobile *</label>
+                <input asp-for="Mobile" placeholder="Enter Mobile" />
+            </div>
+
+            <div>
+                <label>State *</label>
+                <select asp-for="State">
+                    <option>Select State</option>
+                    <option>Maharashtra</option>
+                    <option>Gujarat</option>
+                </select>
+            </div>
+
+            <div>
+                <label>City *</label>
+                <input asp-for="City" placeholder="Enter City" />
+            </div>
+
+            <div>
+                <label>Distributorship *</label>
+                <select asp-for="Distributorship">
+                    <option>Select</option>
+                    <option>Retail</option>
+                    <option>Wholesale</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Message *</label>
+                <textarea asp-for="Message"></textarea>
+            </div>
+
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>

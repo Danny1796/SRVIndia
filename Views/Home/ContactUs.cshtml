@@ -12,93 +12,97 @@
         <div class="privacynote"><p> The information you submit will only be used for our reply to your message and will not be shared or sent to third parties, as explained in the additional information. You can consult additional and detailed information in our <a href="../Privacy/index.html">Privacy Policy</a>.</p></div>
         <form asp-action="SaveEnquiry" method="post">
             <div id="contactForm" class="wow fadeInUp" data-wow-delay="0.8s">
-                <div class="input-form">
-                    <div class="input-box">
-                        <input type="text" asp-for="PersonName" placeholder="Name" class="customerName">
+                    <div class="form-group">
+                        <label for="PersonName">Person Name:</label>
+                        <input type="text" asp-for="PersonName" placeholder="Name" class="form-control">
+                    </div>
+                     <div class="form-group">
+                        <label for="UserEmail">User Email:</label>
+                        <input type="text" asp-for="UserEmail" placeholder="E-mail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="MobileNo">Mobile No.:</label>
+                        <input type="text" asp-for="MobileNo" placeholder="MobileNo" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">State.:</label>
+                        <div class="select-selected">Select State</div>
+                        <select class="form-control" asp-for="States">
+                              <!-- States -->
+                              <option>Andhra Pradesh</option>
+                              <option>Arunachal Pradesh</option>
+                              <option>Assam</option>
+                              <option>Bihar</option>
+                              <option>Chhattisgarh</option>
+                              <option>Goa</option>
+                              <option>Gujarat</option>
+                              <option>Haryana</option>
+                              <option>Himachal Pradesh</option>
+                              <option>Jharkhand</option>
+                              <option>Karnataka</option>
+                              <option>Kerala</option>
+                              <option>Madhya Pradesh</option>
+                              <option>Maharashtra</option>
+                              <option>Manipur</option>
+                              <option>Meghalaya</option>
+                              <option>Mizoram</option>
+                              <option>Nagaland</option>
+                              <option>Odisha</option>
+                              <option>Punjab</option>
+                              <option>Rajasthan</option>
+                              <option>Sikkim</option>
+                              <option>Tamil Nadu</option>
+                              <option>Telangana</option>
+                              <option>Tripura</option>
+                              <option>Uttar Pradesh</option>
+                              <option>Uttarakhand</option>
+                              <option>West Bengal</option>
+
+                              <!-- Union Territories -->
+                              <option>Andaman and Nicobar Islands</option>
+                              <option>Chandigarh</option>
+                              <option>Dadra and Nagar Haveli and Daman and Diu</option>
+                              <option>Delhi</option>
+                              <option>Jammu and Kashmir</option>
+                              <option>Ladakh</option>
+                              <option>Lakshadweep</option>
+                              <option>Puducherry</option>
+                          </select>           
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" asp-for="City" placeholder="City Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="ProductName">Product Name:</label>
+                        <input type="text" asp-for="ProductName" placeholder="Product Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="BusinessType">Are You?:</label>
+                        <div class="form-check">
+                            <input type="radio" asp-for="BusinessType" name="businessType" class="form-check-input" value="option1">
+                            <span>Retail</span>
                         </div>
-                        <div class="input-box">
-                            <input type="text" asp-for="UserEmail" placeholder="E-mail" class="company">
-                            </div>
-                            <div class="input-box">
-                                <input type="text" asp-for="MobileNo" placeholder="MobileNo" class="whatsapp">
-                                </div>
-                    
-                                <div class="input-box">
-                                    <div class="select-selected">Select State</div>
-                                    <div class="select-list">
-                                        <!-- States -->
-                                        <div class="select-option">Andhra Pradesh</div>
-                                        <div class="select-option">Arunachal Pradesh</div>
-                                        <div class="select-option">Assam</div>
-                                        <div class="select-option">Bihar</div>
-                                        <div class="select-option">Chhattisgarh</div>
-                                        <div class="select-option">Goa</div>
-                                        <div class="select-option">Gujarat</div>
-                                        <div class="select-option">Haryana</div>
-                                        <div class="select-option">Himachal Pradesh</div>
-                                        <div class="select-option">Jharkhand</div>
-                                        <div class="select-option">Karnataka</div>
-                                        <div class="select-option">Kerala</div>
-                                        <div class="select-option">Madhya Pradesh</div>
-                                        <div class="select-option">Maharashtra</div>
-                                        <div class="select-option">Manipur</div>
-                                        <div class="select-option">Meghalaya</div>
-                                        <div class="select-option">Mizoram</div>
-                                        <div class="select-option">Nagaland</div>
-                                        <div class="select-option">Odisha</div>
-                                        <div class="select-option">Punjab</div>
-                                        <div class="select-option">Rajasthan</div>
-                                        <div class="select-option">Sikkim</div>
-                                        <div class="select-option">Tamil Nadu</div>
-                                        <div class="select-option">Telangana</div>
-                                        <div class="select-option">Tripura</div>
-                                        <div class="select-option">Uttar Pradesh</div>
-                                        <div class="select-option">Uttarakhand</div>
-                                        <div class="select-option">West Bengal</div>
-
-                                        <!-- Union Territories -->
-                                        <div class="select-option">Andaman and Nicobar Islands</div>
-                                        <div class="select-option">Chandigarh</div>
-                                        <div class="select-option">Dadra and Nagar Haveli and Daman and Diu</div>
-                                        <div class="select-option">Delhi</div>
-                                        <div class="select-option">Jammu and Kashmir</div>
-                                        <div class="select-option">Ladakh</div>
-                                        <div class="select-option">Lakshadweep</div>
-                                        <div class="select-option">Puducherry</div>
-                                    </div>
-                                    <input type="hidden" asp-for="States" class="" value="">
-                                    </div>
-                                    <div class="input-box">
-                                        <input type="text" asp-for="City" placeholder="City Name" class="whatsapp">
-                                        </div>
-                                        <div class="input-box">
-                                            <input type="text" asp-for="ProductName" placeholder="Product Name" class="whatsapp">
-                                            </div>
-                                            <div class="input-box">
-                                                <div class="select-selected">Are You?</div>
-                                                <div class="select-list">
-                                                    <div class="select-option">Retail</div>
-                                                    <div class="select-option">Distributor</div>
-                                                    <div class="select-option">User</div>
-                                                    <div class="select-option">Others</div>
-                                                </div>
-                                                <input type="hidden" asp-for="BusinessType" class="business" value="">
-                                                </div>
-                                                <div class="input-textarea">
-                                                    <textarea asp-for="UserMessage" class="message" placeholder="Your messages here!"></textarea>
-                                                </div>
-
-                                            </div>
-                                            <div class="form-group">
-                                                <button type="submit" class="btn btn-primary">Send Enquiry</button>
-                                            </div>
-
-                                        </div><!--contactForm-->
-                                    </form>
-                                </div>
-
-
-                                <div class="contact-list">
+                        <div class="form-check">
+                            <input type="radio" asp-for="BusinessType" name="businessType" class="form-check-input" value="option2">
+                            <span>Distributor</span>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" asp-for="BusinessType" name="businessType" class="form-check-input" value="option3">
+                            <span>User</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="UserMessage">Message:</label>
+                        <textarea asp-for="UserMessage" class="form-control" placeholder="Your messages here!"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                    </div>
+                    </div><!--contactForm-->
+                    </form>
+                    </div>
+                    <div class="contact-list">
                                     <div class="contact-title">Contact Us</div>
                                     <div class="branch">Below Contact.</div>
                                     <dl class="wow fadeInUp">
@@ -124,5 +128,4 @@
                                         <dd>LH-111,2nd Floor, The Platinum Mall,Pathe Bapurao Marg, Grand Road (East), Mumbai-400004.</dd>
                                     </dl>
                                 </div>
-
-                            </div><!--/wrapper-->
+</div><!--/wrapper-->

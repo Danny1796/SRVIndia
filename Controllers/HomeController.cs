@@ -30,6 +30,40 @@ namespace SRVIndia.Controllers
         {
             return View();
         }
+
+        public IActionResult CookiePolicy()
+        {
+            return View();
+        }
+
+        public IActionResult Term_Condition()
+        {
+            return View();
+        }
+
+        // GET: Distributor Form
+        public IActionResult DistributorForm()
+        {
+            return View();
+        }
+
+        // POST: Save Distributor Data
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DistributorForm(Distributor distributor)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(distributor);   // ✅ Save to DB
+                await _context.SaveChangesAsync();
+
+                ViewBag.Message = "Distributor Form Submitted Successfully!";
+                return View(); // stay on same page
+            }
+
+            return View(distributor);
+        }
+
         public IActionResult Culture()
         {
             return View();
@@ -78,6 +112,8 @@ namespace SRVIndia.Controllers
         {
             if (ModelState.IsValid)
             {
+                enquiry.IsReply = false; // Default value for new enquiries
+                enquiry.CreatedAt = DateTime.Now;
                 // 1. Add the object to the context
                 _context.Add(enquiry);
 

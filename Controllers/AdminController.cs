@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.IO;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using SRVIndia.Models;
 
 namespace SRVIndia.Controllers
@@ -7,9 +11,12 @@ namespace SRVIndia.Controllers
     public class AdminController : Controller
     {
         private readonly ApplicationDbContext _context;
-        public AdminController(ApplicationDbContext context)
+        private readonly IWebHostEnvironment _environment;
+
+        public AdminController(ApplicationDbContext context, IWebHostEnvironment environment)
         {
             _context = context;
+            _environment = environment;
         }
 
         public IActionResult Index()
@@ -34,7 +41,7 @@ namespace SRVIndia.Controllers
             if (bannerFile != null && bannerFile.Length > 0)
             {
                 // 1. Define the folder path (wwwroot/images/banners)
-                string uploadDir = Path.Combine(_environment.WebRootPath, "images/banners");
+                string uploadDir = Path.Combine(_environment.WebRootPath,"images/banners");//_environment.WebRootPath
                 if (!Directory.Exists(uploadDir)) Directory.CreateDirectory(uploadDir);
 
                 // 2. Create a unique filename

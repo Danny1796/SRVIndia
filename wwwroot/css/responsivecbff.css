@@ -499,12 +499,15 @@
     }
 
     .new-arrival .new-arrival-txt .heading {
-        font-size: 32px;
-        line-height: 1.75;
+        font-size: 30px;
+        line-height: 1.1;
+        margin: 10px 0 20px;
     }
 
     .new-arrival .new-arrival-txt .description {
         font-size: 14px;
+        line-height: 1.7;
+        margin: 10px 0 20px;
     }
 
     .index-video h3 {
@@ -599,6 +602,8 @@
     .list-heading h1 {
         font-size: 24px;
         margin-top: 0;
+        line-height: 1.7;
+        margin: 10px 0 20px;
     }
 
     .category-nav .category-list li {
@@ -742,7 +747,7 @@
 
             .about-spirit .spirit .text-content {
                 font-weight: lighter;
-                color: #FFF;
+                color: #23282d;
                 margin: 60px 0;
             }
 

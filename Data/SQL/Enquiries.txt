@@ -1,0 +1,19 @@
+﻿CREATE TABLE Enquiries (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+
+    PersonName NVARCHAR(150) NULL,
+    UserEmail NVARCHAR(150) NULL,
+    MobileNo NVARCHAR(20) NULL,
+
+    States NVARCHAR(100) NULL,
+    City NVARCHAR(100) NULL,
+
+    ProductName NVARCHAR(150) NULL,
+    BusinessType NVARCHAR(100) NULL,
+
+    UserMessage NVARCHAR(MAX) NULL,
+
+    IsReply BIT NOT NULL DEFAULT 0,
+
+    CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
+);

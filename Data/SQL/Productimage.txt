@@ -1,0 +1,8 @@
+﻿CREATE TABLE Products (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(150) NOT NULL,
+    Description NVARCHAR(MAX) NULL,
+    Price DECIMAL(10,2) NOT NULL,
+    ImagePath NVARCHAR(255) NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);

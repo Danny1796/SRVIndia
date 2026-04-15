@@ -41,6 +41,11 @@ namespace SRVIndia.Controllers
             return View();
         }
 
+        public IActionResult Product()
+        {
+            return View();
+        }
+
         public IActionResult News_Letter()
         {
             return View();

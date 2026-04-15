@@ -1,0 +1,154 @@
+﻿@{
+    ViewData["Title"] = "News Letter";
+}   
+    <style>
+        /* General Reset and Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            font-family: 'Georgia', serif;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* News Card Container */
+        .news-wrapper {
+            max-width: 850px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 60px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-top: 8px solid #c62828; /* Professional Red Accent */
+        }
+
+        /* Header Styling */
+        .category {
+            font-family: 'Arial', sans-serif;
+            color: #c62828;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin: 20px 0;
+            color: #1a1a1a;
+            font-weight: 800;
+        }
+
+        .meta-data {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.95rem;
+            color: #777;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Article Content */
+        .article-body p {
+            margin-bottom: 25px;
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+
+        /* Drop Cap Effect */
+        .first-para::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 1;
+            font-weight: bold;
+            margin-right: 12px;
+            color: #1a1a1a;
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Quote/Highlight Box */
+        .quote-section {
+            background: #fff8f8;
+            border-left: 5px solid #c62828;
+            padding: 30px;
+            margin: 40px 0;
+            font-style: italic;
+            font-size: 1.3rem;
+        }
+
+        .author-name {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 1rem;
+            color: #c62828;
+            text-transform: uppercase;
+        }
+
+        /* Footer */
+        .news-footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @@media (max-width: 768px) {
+            .news-wrapper { padding: 30px; margin: 20px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+<body>
+    <form id="form1" runat="server">
+        <div class="news-wrapper">
+            <div class="category">Business & Tech Launch</div>
+            <h1>Grand Launch of SRV INDIA Mobile Accessories Company in Mumbai</h1>
+            
+            <div class="meta-data">
+                <strong>Location:</strong> Bhiwandi, Mumbai | 
+                <strong>Date:</strong> Monday, 16th February 2026
+            </div>
+
+            <article class="article-body">
+                <p class="first-para">
+                    <strong>MUMBAI (MAHARASHTRA):</strong> The mobile accessories landscape in Mumbai witnessed a significant 
+                    expansion this past Sunday with the grand inauguration of <strong>SRV INDIA</strong>. The launch event 
+                    attracted a diverse group of prominent citizens, industry traders, and social representatives 
+                    who gathered to celebrate this new venture.
+                </p>
+
+                <p>
+                    The ceremony was marked by traditional <em>Puja-Archna</em> rituals, followed by a ceremonial ribbon-cutting. 
+                    The honors were performed by the esteemed saints of the <strong>Shri Swaminarayan Temple, Dombivli</strong>, 
+                    adding a spiritual significance to the company's beginning.
+                </p>
+
+                <div class="quote-section">
+                    "SRV INDIA is built on the pillars of modern technology and trust. Our goal is to provide 
+                    the market with high-quality products that consumers can rely on globally."
+                    <span class="author-name">— Mr. Ramlal Jangid, Founder</span>
+                </div>
+
+                <p>
+                    During the address, Directors <strong>Mr. Prakash Jangid</strong> and <strong>Mr. Narpat Jangid</strong> 
+                    shared their vision for the future. They emphasized that the company is committed to generating 
+                    local employment and contributing to the overall economic growth of the surrounding regions.
+                </p>
+
+                <p>
+                    The event concluded on a high note, with <strong>Mr. Arjunlal Jangid</strong> and <strong>Mr. Ramlal Jangid</strong> 
+                    offering their sincere thanks to all the guests, particularly those who traveled from Surat 
+                    to show their support.
+                </p>
+            </article>
+
+        
+        </div>
+    </form>
+</body>

@@ -733,7 +733,7 @@
         }
 
     .about-spirit {
-        padding: 60px 0;
+        padding: 50px 0;
         background-size: cover;
     }
 
@@ -748,7 +748,7 @@
             .about-spirit .spirit .text-content {
                 font-weight: lighter;
                 color: #23282d;
-                margin: 60px 0;
+                margin: 10px 0;
             }
 
     .milestones .milestones-heading {
@@ -859,7 +859,7 @@
 
         .agent-flex-wrapper .text {
             width: 100%;
-            padding: 60px 15px;
+            padding: 0px 16px 0px;
         }
 
         .agent-flex-wrapper .pic {

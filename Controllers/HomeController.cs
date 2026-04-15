@@ -41,6 +41,10 @@ namespace SRVIndia.Controllers
             return View();
         }
 
+        public IActionResult News_Letter()
+        {
+            return View();
+        }
         // GET: Distributor Form
         public IActionResult DistributorForm()
         {

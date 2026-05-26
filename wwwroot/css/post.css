@@ -11922,3 +11922,37 @@ body.elementor-page-21412 .swiper-loader .swiper.finally-initialized::after {
     display: none;
 }
 /* End custom CSS */
+
+/*Prodect cards*/
+.card-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #e9ecef;
+    width: 250px;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }

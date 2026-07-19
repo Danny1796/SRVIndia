@@ -1622,7 +1622,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 }
 
 ol, ul {
-    margin-top: 0;
+    margin-top: 70px;
     margin-bottom: 10px
 }
 
@@ -19858,7 +19858,7 @@ footer .footerLinks {
 }
 
 header {
-    background: #0000
+    background: #ffffff
 }
 
 .productBlock {

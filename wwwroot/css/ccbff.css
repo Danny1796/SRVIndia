@@ -75,7 +75,7 @@ input, textarea {
 .wrapper {
     width: 1400px;
     max-width: 100%;
-    margin: auto;
+    margin: 100px;
 }
 
 .section-container {
@@ -126,7 +126,7 @@ header {
 .pc-nav .nav-item-link {
     float: left;
     font-size: 18px;
-    padding: 31px;
+    padding: 35px;
 }
 
     .pc-nav .nav-item-link:hover, .highlight {
@@ -706,7 +706,7 @@ header {
 .index-about-bg {
     color: #FFF;
     padding: 250px 0;
-    background: url("../images/About/slidenew1srv.png") center no-repeat;
+    background: url("../images/About/slidenew1srv.png") center no-repeat;about-sprit 
     background-size: cover;
 }
 
@@ -721,7 +721,6 @@ header {
     }
 
     .index-culture .culture-content {
-        font-size: 18px;
         line-height: 1.7;
         margin: 50px 0;
     }
@@ -1886,7 +1885,7 @@ article:hover .img img {
 
         .about-spirit .spirit .text-content {
             font-weight: lighter;
-            color: #FFF;
+            color: #333;
             margin: 30px 0;
         }
 

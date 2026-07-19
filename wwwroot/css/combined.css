@@ -38,7 +38,7 @@ dfn {
 
 h1 {
     margin: .67em 0;
-    font-size: 2em
+    font-size: 2rem
 }
 
 mark {
@@ -1430,9 +1430,10 @@ hr {
         color: #777
     }
 
+
 .h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 10px
+    margin-top: 10px;
+    margin-bottom: 0px
 }
 
     .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small {
@@ -1449,11 +1450,11 @@ hr {
     }
 
 .h1, h1 {
-    font-size: 36px
+    font-size: 15px
 }
 
 .h2, h2 {
-    font-size: 30px
+    font-size: 10px
 }
 
 .h3, h3 {

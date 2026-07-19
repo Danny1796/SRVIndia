@@ -7,9 +7,9 @@
     <div class="wrapper">
         <nav class="breadcrumb" aria-label="breadcrumb">
             <a asp-controller="Home" asp-action="Index">Home</a>
-            <span class="sep">›</span>
+            <span class="sep"></span>
             <a asp-controller="Products" asp-action="Index">Products</a>
-            <span class="sep">›</span>
+            <span class="sep"></span>
             <strong>Ultra Guard Screen Protector</strong>
         </nav>
     </div>
@@ -27,18 +27,13 @@
                          alt="SRV India Ultra Guard Screen Protector" />
                     <div class="image-glow"></div>
                 </div>
-                <div class="product-badges">
-                    <span class="badge">9H Hardness</span>
-                    <span class="badge">Ultra Clear</span>
-                    <span class="badge">Bubble Free</span>
-                    <span class="badge">Scratch Resistant</span>
-                </div>
+             
             </div>
 
             <!-- Right: Product Info -->
             <div class="product-info-area">
                 <div class="product-label">Screen Protector</div>
-                <h1>SRV India<br><span class="highlights">Ultra Guard</span></h1>
+                <h1>SRV India<br><span class="highlights"></span></h1>
                 <h2>Premium Tempered Glass Protection for Smartphones</h2>
                 <p class="product-short-desc">
                     Protect your smartphone display with SRV India Air Guard —
@@ -236,7 +231,7 @@
         --surface: #ffffff;
         --bg: #f4f7fd;
         --border: #dde4f0;
-        --radius-lg: 22px;
+        --radius-lg: 0px;
         --radius-md: 14px;
         --radius-sm: 8px;
         --shadow-sm: 0 2px 12px rgba(26,107,255,0.08);
@@ -336,7 +331,6 @@
         background: var(--surface);
         border-radius: var(--radius-lg);
         padding: 40px;
-        box-shadow: var(--shadow-lg);
         overflow: hidden;
     }
 
@@ -826,7 +820,7 @@
         }
 
         .main-product-image {
-            padding: 24px;
+            padding: 2px;
         }
 
         .product-info-area h1 {
@@ -883,6 +877,33 @@
         }
     }
 
+    /* =========================================
+               PAGE-SCOPED STYLES
+            ========================================= */
+    .ultraguard-wrapper { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color: #111; }
+
+    /* Image gallery layout */
+    .product-gallery { width: 100%; display: flex; flex-direction: column; gap: 12px; align-items: center; }
+    .product-main-image { width: 100%; max-width: 560px; height: auto; display: block; border: 1px solid #000; border-radius: 0 !important; box-shadow: none !important; background: #fff; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; outline: none; }
+
+    /* Thumbnails */
+    .product-thumbs { display: flex; gap: 10px; justify-content: center; }
+    .product-thumb { width: 86px; height: auto; display: block; border: 1px solid #000; border-radius: 0 !important; box-shadow: none !important; background: #fff; -webkit-tap-highlight-color: transparent; user-select: none; cursor: pointer; }
+    .product-thumb.active { border: 2px solid #000; }
+
+    /* Remove any hover/highlight effects inherited from other CSS */
+    .ultraguard-wrapper img { transition: none !important; filter: none !important; -webkit-filter: none !important; }
+    .ultraguard-wrapper img:hover, .ultraguard-wrapper img:focus, .ultraguard-wrapper img:active { box-shadow: none !important; transform: none !important; opacity: 1 !important; }
+
+    /* Desktop layout: thumbs vertical on right */
+    @@media (min-width: 992px) {
+      .product-gallery { flex-direction: row; align-items: flex-start; gap: 24px; }
+      .product-thumbs { flex-direction: column; gap: 12px; justify-content: flex-start; }
+      .product-thumb { width: 100px; }
+    }
+
+    /* Accessibility focus ring for keyboard users, subtle and not glowing */
+    .product-thumb:focus { outline: 2px solid rgba(0,0,0,0.12); outline-offset: 2px; }
 </style>
 
 <!-- ===================== TAB SCRIPT ===================== -->
@@ -903,5 +924,28 @@
                 if (target) { target.classList.add('active'); }
             });
         });
+    })();
+
+    (function(){
+      const main = document.getElementById('mainImage');
+      const thumbs = document.querySelectorAll('.product-thumb');
+      if(!main || !thumbs.length) return;
+
+      function activateThumb(t){
+        thumbs.forEach(x => x.classList.remove('active'));
+        t.classList.add('active');
+        const large = t.getAttribute('data-large') || t.src;
+        // update main src and attempt to update srcset if present
+        main.src = large;
+        // If thumbnails hold srcset data-large-srcset, we could set main.srcset
+        // keep a simple approach: set main.src only so it stays clear and simple
+      }
+
+      thumbs.forEach(t => {
+        t.addEventListener('click', () => activateThumb(t));
+        t.addEventListener('keydown', (e) => {
+          if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activateThumb(t); }
+        });
+      });
     })();
 </script>

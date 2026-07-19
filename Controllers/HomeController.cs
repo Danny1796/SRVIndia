@@ -45,6 +45,33 @@ namespace SRVIndia.Controllers
         {
             return View();
         }
+        public IActionResult UltraGuard()
+        {
+            return View();
+        }
+        public IActionResult UV()
+        {
+            return View();
+        }
+
+        public IActionResult AirGuard()
+        {
+            return View();
+        }
+
+        public IActionResult Hydrogelfilm()
+        {
+            return View();
+        }
+
+        public IActionResult Kinetic()
+        {
+            return View();
+        }
+        public IActionResult Coming_soon()
+        {
+            return View();
+        }
 
         public IActionResult News_Letter()
         {

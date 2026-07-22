@@ -8674,8 +8674,8 @@ body.rtl .elementor-21412 .elementor-element.elementor-element-704153e {
     color: transparent; /* Make the fill transparent */
     -webkit-text-stroke-width: 2px; /* Adjust the stroke width as needed */
     -webkit-text-stroke-color: white; /* Adjust the stroke color as needed */
-    text-stroke-width: 2px; /* Standard property for text stroke width */
-    text-stroke-color: white; /* Standard property for text stroke color */
+    -webkit-text-stroke-width: 2px; /* Standard property for text stroke width */
+    -webkit-text-stroke-color: white; /* Standard property for text stroke color */
 }
 
 .elementor-21412 .elementor-element.elementor-element-11370c2 .solid::first-letter {
@@ -8833,18 +8833,18 @@ body.rtl .elementor-21412 .elementor-element.elementor-element-704153e {
 
     .elementor-21412 .elementor-element.elementor-element-c0572dd .tab-content {
         opacity: 0;
-        visibility: 'hidden';
+        visibility: hidden;
         height: 0;
-        overflow: 'hidden';
-        position: 'absolute'
+        overflow: hidden;
+        position: absolute;
     }
 
         .elementor-21412 .elementor-element.elementor-element-c0572dd .tab-content.active {
             opacity: 1;
-            visibility: 'visible';
+            visibility: visible;
             height: auto;
-            overflow: 'visible';
-            position: 'relative'
+            overflow: visible;
+            position: relative
         }
 
     .elementor-21412 .elementor-element.elementor-element-c0572dd ul.custom-swatch {
@@ -9579,8 +9579,8 @@ body.rtl .elementor-21412 .elementor-element.elementor-element-704153e {
     color: transparent; /* Make the fill transparent */
     -webkit-text-stroke-width: 2px; /* Adjust the stroke width as needed */
     -webkit-text-stroke-color: white; /* Adjust the stroke color as needed */
-    text-stroke-width: 2px; /* Standard property for text stroke width */
-    text-stroke-color: white; /* Standard property for text stroke color */
+    -webkit-text-stroke-width: 2px; /* Standard property for text stroke width */
+    -webkit-text-stroke-color: white; /* Standard property for text stroke color */
 }
 /* Start custom CSS */ .elementor-7547 .elementor-element.elementor-element-903b41c .ue_marquee a .orange-fill {
     color: #FF7300;
@@ -11571,8 +11571,8 @@ body.rtl .elementor-21412 .elementor-element.elementor-element-704153e {
     color: transparent; /* Make the fill transparent */
     -webkit-text-stroke-width: 2px; /* Adjust the stroke width as needed */
     -webkit-text-stroke-color: white; /* Adjust the stroke color as needed */
-    text-stroke-width: 2px; /* Standard property for text stroke width */
-    text-stroke-color: white; /* Standard property for text stroke color */
+    -webkit-text-stroke-width: 2px; /* Standard property for text stroke width */
+    -webkit-text-stroke-color: white; /* Standard property for text stroke color */
 }
 
 .elementor-21412 .elementor-element.elementor-element-16ab077 .solid::first-letter {
@@ -11924,7 +11924,7 @@ body.elementor-page-21412 .swiper-loader .swiper.finally-initialized::after {
 /* End custom CSS */
 
 /*Prodect cards*/
-.card-container {
+.cards-container {
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -11932,9 +11932,9 @@ body.elementor-page-21412 .swiper-loader .swiper.finally-initialized::after {
     flex-wrap: wrap;
 }
 
-.card {
+.cards {
     background: #e9ecef;
-    width: 250px;
+    width: 157px;
     border-radius: 15px;
     padding: 15px;
     text-align: center;

@@ -1,15 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "SRV India - Air Guard Screen Protector";
+    ViewData["Title"] = "SRV India - Ultra Guard Screen Protector";
 }
+
+<!-- Optional icons/font (CDN) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 <!-- ===================== BREADCRUMB ===================== -->
 <section class="breadcrumb-section">
     <div class="wrapper">
         <nav class="breadcrumb" aria-label="breadcrumb">
             <a asp-controller="Home" asp-action="Index">Home</a>
-            <span class="sep"></span>
+         
             <a asp-controller="Products" asp-action="Index">Products</a>
-            <span class="sep"></span>
+           
             <strong>Ultra Guard Screen Protector</strong>
         </nav>
     </div>
@@ -21,63 +27,77 @@
         <div class="product-detail-page">
 
             <!-- Left: Product Image -->
-            <div class="product-image-area">
-                <div class="main-product-image">
-                    <img src="~/images/Products/ULTRA GUARDnew.png"
-                         alt="SRV India Ultra Guard Screen Protector" />
-                    <div class="image-glow"></div>
-                </div>
-             
+            <div class="product-image-area" aria-label="Product image">
+                <figure class="main-product-image">
+                    <img src="~/images/Products/ULTRA GUARDnew.png" alt="SRV India Ultra Guard ESD Screen Protector" />
+                </figure>
+
+                @* <div class="product-badges" aria-label="Key highlights">
+                    <span class="badge"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> 9H Hardness</span>
+                    <span class="badge"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Antistatic</span>
+                    <span class="badge"><i class="fa-solid fa-snowflake" aria-hidden="true"></i> HD Dustproof</span>
+                    <span class="badge"><i class="fa-solid fa-microchip" aria-hidden="true"></i> ESD Shield</span>
+                    <span class="badge"><i class="fa-solid fa-hand" aria-hidden="true"></i> Anti Fingerprint</span>
+                </div> *@
             </div>
 
             <!-- Right: Product Info -->
             <div class="product-info-area">
-                <div class="product-label">Screen Protector</div>
-                <h1>SRV India<br><span class="highlights"></span></h1>
-                <h2>Premium Tempered Glass Protection for Smartphones</h2>
+                
+                <h1>SRV - UltraGuard<br /><span class="brand-name">Available</span></h1>
+                <h2>Super Antistatic HD Dustproof Protection</h2>
                 <p class="product-short-desc">
-                    Protect your smartphone display with SRV India Air Guard —
-                    engineered with premium tempered glass for maximum safety,
-                    ultra-clear visibility, and a seamless touch experience.
+                    Engineered for warriors who demand the best. Ultra Guard is SRV India's premium ESD screen protector —
+                    combining military-grade antistatic technology, HD dustproof barrier, and 9H tempered glass into one shield.
                 </p>
 
-                <div class="product-features">
+                <div class="product-features" aria-label="Product features">
                     <div class="feature-box">
-                        <div class="feature-icon">🛡️</div>
+                        <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
                         <div>
-                            <h3>9H Strong Protection</h3>
-                            <p>Guards against scratches, drops, sharp objects, and daily wear.</p>
+                            <h3>Antistatic ESD</h3>
+                            <p>Reduces electrostatic build-up to help prevent dust attraction and charge issues.</p>
                         </div>
                     </div>
+
                     <div class="feature-box">
-                        <div class="feature-icon">💎</div>
+                        <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-wind"></i></div>
                         <div>
-                            <h3>HD Clarity</h3>
-                            <p>99.9% transparent — original display colors preserved perfectly.</p>
+                            <h3>HD Dustproof</h3>
+                            <p>Helps block micro-particles from settling on your display.</p>
                         </div>
                     </div>
+
                     <div class="feature-box">
-                        <div class="feature-icon">👆</div>
+                        <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-helmet-safety"></i></div>
                         <div>
-                            <h3>Smooth Touch</h3>
-                            <p>Ultra-responsive touch sensitivity with fingerprint-friendly surface.</p>
+                            <h3>9H Hardness</h3>
+                            <p>High hardness tempered glass for everyday scratch resistance.</p>
                         </div>
                     </div>
+
                     <div class="feature-box">
-                        <div class="feature-icon">✨</div>
+                        <div class="feature-icon" aria-hidden="true"><i class="fa-solid fa-fingerprint"></i></div>
                         <div>
-                            <h3>Bubble Free Install</h3>
-                            <p>Strong edge adhesion ensures a clean, bubble-free application.</p>
+                            <h3>Anti Fingerprint</h3>
+                            <p>Oleophobic coating helps repel oils and smudges for a clearer look.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="product-buttons">
+                @* <div class="pack-info" aria-label="Pack information">
+                    <span class="pack-badge"><i class="fa-solid fa-box"></i> Inner Pack: 10 PCS</span>
+                    <span class="pack-badge"><i class="fa-solid fa-circle-check"></i> Genuine Trusted Premium Quality</span>
+                </div> *@
+
+                <div class="product-buttons" aria-label="Actions">
                     <a href="javascript:void(0);" id="enquiry" class="primary-btn">
-                        Become a Dealer
+                        <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+                        <span>Become a Dealer</span>
                     </a>
                     <a href="#model-list" class="secondary-btn">
-                        View Model List
+                        <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                        <span>View Model List</span>
                     </a>
                 </div>
             </div>
@@ -86,10 +106,10 @@
     </div>
 </section>
 
-@* <!-- ===================== TABS ===================== -->
-<section class="tab-nav">
+<!-- ===================== TABS ===================== -->
+@* <section class="tab-nav">
     <div class="wrapper">
-        <ul role="tablist">
+        <ul role="tablist" class="tablist">
             <li role="tab" class="tab-item active" data-tab="intro">Introduction</li>
             <li role="tab" class="tab-item" data-tab="specs">Specifications</li>
             <li role="tab" class="tab-item" data-tab="features">Features</li>
@@ -102,26 +122,25 @@
     <div class="wrapper">
         <div class="content-flex">
             <div class="content-text">
-                <h3>Premium Tempered Glass Protection</h3>
+                <h3>Next-Level ESD Screen Protection</h3>
+
                 <p>
-                    SRV India Ultra Guard Screen Protector is crafted using high-quality
-                    tempered glass technology, engineered to deliver superior protection
-                    for your smartphone display.
+                    SRV India Ultra Guard is not just a screen protector — it's a precision-engineered defensive shield.
+                    Built with advanced ESD (Electrostatic Discharge) technology, Ultra Guard actively helps repel dust particles.
                 </p>
+
                 <p>
-                    The advanced 9H hardness rating shields your screen from scratches,
-                    cracks, dust, fingerprints, and accidental drops — without compromising
-                    ultra-clear visibility.
+                    The antistatic HD dustproof surface creates an invisible barrier that stops micro-dust before it can settle
+                    on your display — delivering clear visuals that last far longer than standard alternatives.
                 </p>
+
                 <p>
-                    With seamless touch response and bubble-free installation, Air Guard
-                    guarantees a premium user experience while keeping screen sensitivity
-                    completely intact.
+                    Backed by 9H military-grade tempered glass, Ultra Guard absorbs impact from drops and maintains optical transparency.
                 </p>
             </div>
-            <div class="content-image">
-                <img src="~/images/Products/ULTRA GUARDnew.png"
-                     alt="SRV India Ultra Guard Screen Protector Detail" />
+
+            <div class="content-image" aria-label="Product detail image">
+                <img src="~/images/Products/ULTRA GUARDnew.png" alt="SRV India Ultra Guard ESD Screen Protector Detail" />
             </div>
         </div>
     </div>
@@ -131,37 +150,17 @@
 <section class="tab-panel" id="tab-specs">
     <div class="wrapper">
         <h2 class="section-title">Product Specifications</h2>
+
         <div class="spec-grid">
-            <div class="spec-item">
-                <div class="spec-icon">🧪</div>
-                <h4>Material</h4>
-                <p>Tempered Glass</p>
-            </div>
-            <div class="spec-item">
-                <div class="spec-icon">💪</div>
-                <h4>Hardness</h4>
-                <p>9H</p>
-            </div>
-            <div class="spec-item">
-                <div class="spec-icon">📏</div>
-                <h4>Thickness</h4>
-                <p>0.33mm Ultra Thin</p>
-            </div>
-            <div class="spec-item">
-                <div class="spec-icon">🔍</div>
-                <h4>Transparency</h4>
-                <p>99.9% HD Clear</p>
-            </div>
-            <div class="spec-item">
-                <div class="spec-icon">📱</div>
-                <h4>Compatibility</h4>
-                <p>All Smartphone Models</p>
-            </div>
-            <div class="spec-item">
-                <div class="spec-icon">⚡</div>
-                <h4>Installation</h4>
-                <p>Bubble Free</p>
-            </div>
+            <div class="spec-item"><div class="spec-icon"><i class="fa-solid fa-flask"></i></div><h4>Material</h4><p>ESD Tempered Glass</p></div>
+            <div class="spec-item"><div class="spec-icon"><i class="fa-solid fa-hand-fist"></i></div><h4>Hardness</h4><p>9H</p></div>
+            <div class="spec-item"><div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div><h4>Thickness</h4><p>0.33mm Ultra Thin</p></div>
+            <div class="spec-item"><div class="spec-icon"><i class="fa-solid fa-eye"></i></div><h4>Transparency</h4><p>99.9% HD Clear</p></div>
+            <div class="spec-item"><div class="spec-icon"><i class="fa-solid fa-bolt"></i></div><h4>Technology</h4><p>Super Antistatic ESD</p></div>
+            <div class="spec-item"><div class="spec-icon"><i class="fa-solid fa-shield-dog"></i></div><h4>Dustproof</h4><p>HD Dustproof Coating</p></div>
+            <div class="spec-item"><div class="spec-icon"><i class="fa-solid fa-fingerprint"></i></div><h4>Coating</h4><p>Anti-Fingerprint Oleophobic</p></div>
+            <div class="spec-item"><div class="spec-icon"><i class="fa-solid fa-mobile-screen-button"></i></div><h4>Compatibility</h4><p>All Smartphone Models</p></div>
+            <div class="spec-item"><div class="spec-icon"><i class="fa-solid fa-layer-group"></i></div><h4>Pack</h4><p>10 PCS Inner Pack</p></div>
         </div>
     </div>
 </section>
@@ -169,27 +168,31 @@
 <!-- ===================== FEATURES PANEL ===================== -->
 <section class="tab-panel" id="tab-features">
     <div class="wrapper">
-        <h2 class="section-title">Why Choose Ultra Guard?</h2>
+        <h2 class="section-title">Why Ultra Guard Stands Apart</h2>
+
         <div class="features-grid">
             <div class="feat-card">
                 <div class="feat-num">01</div>
-                <h4>Military-Grade Hardness</h4>
-                <p>9H tempered glass is the highest hardness rating available for screen protectors — capable of resisting keys, coins, and sharp objects with ease.</p>
+                <h4>ESD Antistatic Technology</h4>
+                <p>Helps neutralize static charge — one major reason dust can stick to displays.</p>
             </div>
+
             <div class="feat-card">
                 <div class="feat-num">02</div>
-                <h4>Crystal Clear Display</h4>
-                <p>99.9% optical transparency ensures your screen looks exactly as the manufacturer intended — no colour distortion, no haze.</p>
+                <h4>Super HD Dustproof Barrier</h4>
+                <p>Helps block airborne micro-particles to maintain clearer screen visibility.</p>
             </div>
+
             <div class="feat-card">
                 <div class="feat-num">03</div>
-                <h4>Oleophobic Coating</h4>
-                <p>The anti-fingerprint surface repels oils and smudges, keeping your display clean and your swipes smooth throughout the day.</p>
+                <h4>Military-Grade 9H Hardness</h4>
+                <p>Rated 9H for improved resistance against daily scratches.</p>
             </div>
+
             <div class="feat-card">
                 <div class="feat-num">04</div>
-                <h4>Easy Self-Installation</h4>
-                <p>Alignment guide and dust-removal kit included. Install perfectly in under a minute — no professional help needed.</p>
+                <h4>Full Coverage Protection</h4>
+                <p>Strong adhesion supports a flush fit and better edge coverage.</p>
             </div>
         </div>
     </div>
@@ -200,60 +203,40 @@
     {
       "@@context": "https://schema.org/",
       "@@type": "Product",
-      "name": "SRV India Air Guard Screen Protector",
+      "name": "SRV India Ultra Guard ESD Screen Protector",
       "image": "/images/Products/ULTRA GUARDnew.png",
-      "description": "Premium tempered glass screen protector with 9H hardness, 99.9% ultra-clear transparency and bubble-free installation for all smartphone models.",
-      "brand": {
-        "@@type": "Brand",
-        "name": "SRV India"
-      },
-      "offers": {
-        "@@type": "Offer",
-        "availability": "https://schema.org/InStock"
-      }
+      "description": "Premium Super Antistatic HD Dustproof ESD tempered glass screen protector with 9H hardness and anti-fingerprint coating. Inner pack of 10 PCS.",
+      "brand": { "@@type": "Brand", "name": "SRV India" },
+      "offers": { "@@type": "Offer", "availability": "https://schema.org/InStock" }
     }
 </script>
 
-<!-- ===================== STYLES ===================== -->
+<!-- ===================== STYLES (clean + professional, white UI) ===================== -->
 <style>
-
-    /* =========================================
-               CSS VARIABLES & RESET
-            ========================================= */
     :root {
-        --blue: #1a6bff;
-        --blue-dark: #0047cc;
-        --blue-light: #e8f0ff;
-        --blue-glow: rgba(26,107,255,0.18);
-        --ink: #0d1421;
-        --ink-soft: #3a4560;
-        --ink-muted: #6b7a99;
+        --bg: #ffffff;
         --surface: #ffffff;
-        --bg: #f4f7fd;
-        --border: #dde4f0;
-        --radius-lg: 0px;
-        --radius-md: 14px;
-        --radius-sm: 8px;
-        --shadow-sm: 0 2px 12px rgba(26,107,255,0.08);
-        --shadow-md: 0 6px 30px rgba(26,107,255,0.12);
-        --shadow-lg: 0 12px 50px rgba(26,107,255,0.16);
-        --transition: 0.28s cubic-bezier(0.4,0,0.2,1);
-        --font-head: 'Georgia', 'Times New Roman', serif;
-        --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        --surface-2: #f6f6f6;
+        --text: #111111;
+        --muted: #4a4a4a;
+        --border: rgba(0,0,0,.18);
+        --border-2: rgba(0,0,0,.28);
+        --radius: 12px;
+        --radius-lg: 16px;
+        --shadow: none;
+        --font: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     }
 
     *, *::before, *::after {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
     }
 
     body {
-        font-family: var(--font-body);
+        font-family: var(--font);
         background: var(--bg);
-        color: var(--ink);
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased;
+        color: var(--text);
     }
 
     img {
@@ -264,270 +247,222 @@
 
     .wrapper {
         width: 100%;
-        max-width: 1280px;
+        max-width: 1200px;
         margin: 0 auto;
-        padding: 0 24px;
+        padding: 0 18px;
     }
 
-    /* =========================================
-               BREADCRUMB
-            ========================================= */
+    /* Breadcrumb */
     .breadcrumb-section {
-        padding: 18px 0;
+        padding: 14px 0;
         border-bottom: 1px solid var(--border);
-        background: var(--surface);
+        background: #fff;
     }
 
     .breadcrumb {
         display: flex;
-        align-items: center;
-        gap: 8px;
         flex-wrap: wrap;
-        font-size: 13px;
-        color: var(--ink-muted);
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        color: var(--muted);
     }
 
         .breadcrumb a {
-            color: var(--blue);
+            color: var(--text);
             text-decoration: none;
-            transition: color var(--transition);
-        }
-
-            .breadcrumb a:hover {
-                color: var(--blue-dark);
-            }
-
-        .breadcrumb .sep {
-            color: var(--border);
-            font-size: 16px;
-        }
-
-        .breadcrumb strong {
-            color: var(--ink);
             font-weight: 600;
         }
 
-    /* =========================================
-               PRODUCT HERO SECTION
-            ========================================= */
+            .breadcrumb a:hover {
+                text-decoration: underline;
+            }
+
+        .breadcrumb .sep {
+            color: #777;
+        }
+
+    /* Hero */
     .product-detail-section {
-        padding: 56px 0 64px;
+        padding: 34px 0 22px;
+        background: #fff;
     }
 
     .product-detail-page {
         display: flex;
-        align-items: center;
-        gap: 64px;
+        gap: 56px;
+        align-items: flex-start;
     }
 
-    /* --- Image Side --- */
     .product-image-area {
-        flex: 0 0 480px;
-        width: 100%;
+        flex: 0 0 460px;
     }
 
+    /* Simple image card with black border */
     .main-product-image {
-        position: relative;
-        background: var(--surface);
-        border-radius: var(--radius-lg);
-        padding: 40px;
-        overflow: hidden;
+        background: #fff;
+        border: 2px solid #000;
+        padding: 16px;
+        border-radius: 0;
     }
-
-        .main-product-image::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse at 60% 40%, var(--blue-glow) 0%, transparent 65%);
-            pointer-events: none;
-        }
-
-        .main-product-image img {
-            width: 100%;
-            object-fit: contain;
-            position: relative;
-            z-index: 1;
-            transition: transform 0.5s ease;
-        }
-
-        .main-product-image:hover img {
-            transform: scale(1.03);
-        }
 
     .product-badges {
         display: flex;
         gap: 10px;
-        margin-top: 20px;
         flex-wrap: wrap;
+        margin-top: 14px;
     }
 
     .badge {
-        background: var(--blue-light);
-        color: var(--blue-dark);
-        padding: 8px 16px;
-        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--border);
+        background: #fff;
+        padding: 8px 12px;
+        border-radius: 999px;
         font-size: 13px;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-        border: 1px solid rgba(26,107,255,0.2);
-        transition: all var(--transition);
+        font-weight: 700;
+        color: var(--text);
     }
 
-        .badge:hover {
-            background: var(--blue);
-            color: #fff;
-        }
-
-    /* --- Info Side --- */
     .product-info-area {
-        flex: 1 1 0;
+        flex: 1;
         min-width: 0;
+        padding-top: 6px;
     }
 
     .product-label {
         display: inline-block;
-        background: var(--blue-light);
-        color: var(--blue);
+        border: 1px solid var(--border);
+        background: var(--surface-2);
+        padding: 7px 14px;
+        border-radius: 999px;
         font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.1em;
+        font-weight: 800;
+        letter-spacing: .06em;
         text-transform: uppercase;
-        padding: 6px 14px;
-        border-radius: 30px;
-        margin-bottom: 18px;
+        margin-bottom: 12px;
     }
 
-    .product-info-area h1 {
-        font-family: var(--font-head);
-        font-size: clamp(36px, 4vw, 54px);
-        line-height: 1.1;
-        margin-bottom: 18px;
-        color: var(--ink);
-        font-weight: 700;
+    h1 {
+        font-size: clamp(2px,4vw,20px);
+        line-height: 1.05;
+        margin-bottom: 10px;
+        font-weight: 600;
     }
 
-        .product-info-area h1 .highlights {
-            color: var(--blue);
-        }
+    .brand-name {
+        font-weight: 600;
+        color: #1eb931;
+    }
 
-    .product-info-area h2 {
-        font-size: clamp(16px, 2vw, 20px);
-        color: var(--ink-muted);
-        margin-bottom: 22px;
-        line-height: 1.5;
-        font-weight: 400;
+    h2 {
+        font-size: clamp(15px,2.1vw,20px);
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: var(--text);
     }
 
     .product-short-desc {
         font-size: 15px;
         line-height: 1.85;
-        margin-bottom: 36px;
-        color: var(--ink-soft);
+        color: var(--muted);
+        margin-bottom: 22px;
+        max-width: 620px;
     }
 
-    /* =========================================
-               FEATURE BOXES
-            ========================================= */
     .product-features {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
-        margin-bottom: 38px;
+        gap: 12px;
+        margin-bottom: 18px;
     }
 
     .feature-box {
-        display: flex;
-        align-items: flex-start;
-        gap: 14px;
-        background: var(--surface);
-        border-radius: var(--radius-md);
-        padding: 20px;
-        box-shadow: var(--shadow-sm);
         border: 1px solid var(--border);
-        transition: all var(--transition);
+        background: #fff;
+        border-radius: var(--radius);
+        padding: 16px;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
     }
-
-        .feature-box:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
-            border-color: rgba(26,107,255,0.25);
-        }
 
     .feature-icon {
-        font-size: 24px;
-        line-height: 1;
-        flex-shrink: 0;
-        margin-top: 2px;
+        width: 34px;
+        height: 34px;
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        flex: 0 0 auto;
     }
 
+        .feature-icon i {
+            font-size: 15px;
+        }
+
     .feature-box h3 {
-        font-size: 15px;
-        color: var(--ink);
-        margin-bottom: 6px;
+        font-size: 14px;
         font-weight: 700;
+        margin-bottom: 6px;
     }
 
     .feature-box p {
         font-size: 13px;
         line-height: 1.65;
-        color: var(--ink-muted);
+        color: var(--muted);
     }
 
-    /* =========================================
-               BUTTONS
-            ========================================= */
+    .pack-info {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+    }
+
+    .pack-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid var(--border);
+        background: var(--surface-2);
+        padding: 10px 14px;
+        border-radius: var(--radius);
+        font-weight: 600;
+        font-size: 13px;
+    }
+
     .product-buttons {
         display: flex;
-        gap: 16px;
+        gap: 14px;
         flex-wrap: wrap;
     }
 
-    .primary-btn,
-    .secondary-btn {
+    .primary-btn, .secondary-btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 14px 28px;
-        border-radius: var(--radius-sm);
+        gap: 10px;
+        padding: 12px 22px;
+        border-radius: 10px;
+        border: 1px solid var(--border);
         text-decoration: none;
-        font-weight: 700;
-        font-size: 15px;
-        transition: all var(--transition);
-        letter-spacing: 0.02em;
-        white-space: nowrap;
-        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        background: #fff;
+        color: var(--text);
     }
 
     .primary-btn {
-        background: var(--blue);
-        color: #fff;
-        box-shadow: 0 4px 18px rgba(26,107,255,0.35);
+        border-color: #000;
     }
 
-        .primary-btn:hover {
-            background: var(--blue-dark);
-            box-shadow: 0 6px 24px rgba(26,107,255,0.45);
-            transform: translateY(-2px);
-            color: #fff;
-        }
-
-    .secondary-btn {
-        background: transparent;
-        color: var(--blue);
-        border: 2px solid var(--blue);
-    }
-
-        .secondary-btn:hover {
-            background: var(--blue-light);
-            transform: translateY(-2px);
-            color: var(--blue-dark);
-        }
-
-    /* =========================================
-               TAB NAV
-            ========================================= */
+    /* Tabs */
     .tab-nav {
-        background: var(--surface);
+        background: #fff;
         border-top: 1px solid var(--border);
         border-bottom: 1px solid var(--border);
         position: sticky;
@@ -535,93 +470,63 @@
         z-index: 50;
     }
 
-        .tab-nav ul {
-            display: flex;
-            align-items: center;
-            gap: 0;
-            list-style: none;
-            overflow-x: auto;
-            scrollbar-width: none;
-        }
-
-            .tab-nav ul::-webkit-scrollbar {
-                display: none;
-            }
+    .tablist {
+        display: flex;
+        gap: 0;
+        list-style: none;
+        overflow-x: auto;
+    }
 
     .tab-item {
-        padding: 18px 28px;
+        padding: 14px 18px;
         font-weight: 600;
         font-size: 14px;
         cursor: pointer;
-        transition: all var(--transition);
-        color: var(--ink-muted);
-        position: relative;
+        border-bottom: 3px solid transparent;
         white-space: nowrap;
-        letter-spacing: 0.02em;
-        user-select: none;
+        color: #6a6a6a;
     }
 
-        .tab-item::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%) scaleX(0);
-            width: 60%;
-            height: 3px;
-            background: var(--blue);
-            border-radius: 3px 3px 0 0;
-            transition: transform var(--transition);
-        }
-
         .tab-item:hover {
-            color: var(--blue);
+            color: var(--text);
         }
 
         .tab-item.active {
-            color: var(--blue);
+            color: var(--text);
+            border-bottom-color: #000;
         }
 
-            .tab-item.active::after {
-                transform: translateX(-50%) scaleX(1);
-            }
-
-    /* =========================================
-               TAB PANELS
-            ========================================= */
     .tab-panel {
         display: none;
-        padding: 72px 0;
+        padding: 40px 0;
+        background: #fff;
     }
 
         .tab-panel.active {
             display: block;
         }
 
-    /* Introduction panel */
     .content-flex {
         display: flex;
-        align-items: center;
-        gap: 60px;
+        gap: 44px;
+        align-items: flex-start;
     }
 
     .content-text {
-        flex: 1 1 0;
+        flex: 1;
     }
 
         .content-text h3 {
-            font-family: var(--font-head);
-            font-size: clamp(26px, 3vw, 38px);
-            margin-bottom: 28px;
-            color: var(--ink);
-            line-height: 1.2;
+            font-size: clamp(22px,2.7vw,34px);
+            margin-bottom: 16px;
+            font-weight: 600;
         }
 
         .content-text p {
             font-size: 15px;
             line-height: 1.9;
-            margin-bottom: 18px;
-            color: var(--ink-soft);
+            color: var(--muted);
+            margin-bottom: 14px;
         }
 
             .content-text p:last-child {
@@ -629,177 +534,136 @@
             }
 
     .content-image {
-        flex: 0 0 420px;
+        flex: 0 0 380px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: #fff;
+        padding: 10px;
     }
 
-        .content-image img {
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-lg);
-            width: 100%;
-        }
-
-    /* =========================================
-               SPECIFICATIONS PANEL
-            ========================================= */
     .section-title {
         text-align: center;
-        font-family: var(--font-head);
-        font-size: clamp(28px, 3.5vw, 42px);
-        margin-bottom: 52px;
-        color: var(--ink);
+        font-size: clamp(26px,3.2vw,42px);
+        margin-bottom: 28px;
+        font-weight: 600;
     }
 
+    /* Specs */
     .spec-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 14px;
     }
 
     .spec-item {
-        background: var(--surface);
-        padding: 32px 24px;
-        border-radius: var(--radius-lg);
-        text-align: center;
-        box-shadow: var(--shadow-sm);
         border: 1px solid var(--border);
-        transition: all var(--transition);
+        background: #fff;
+        border-radius: var(--radius-lg);
+        padding: 22px 14px;
+        text-align: center;
     }
 
-        .spec-item:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-            border-color: rgba(26,107,255,0.25);
-        }
-
     .spec-icon {
-        font-size: 30px;
-        margin-bottom: 14px;
+        font-size: 22px;
+        margin-bottom: 8px;
+        color: var(--text);
     }
 
     .spec-item h4 {
-        color: var(--blue);
-        margin-bottom: 10px;
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: 0.02em;
+        font-size: 14px;
+        font-weight: 800;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: .03em;
     }
 
     .spec-item p {
-        color: var(--ink-soft);
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--muted);
     }
 
-    /* =========================================
-               FEATURES PANEL
-            ========================================= */
+    /* Features */
     .features-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 28px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 14px;
     }
 
     .feat-card {
-        background: var(--surface);
-        padding: 36px 32px;
-        border-radius: var(--radius-lg);
-        box-shadow: var(--shadow-sm);
         border: 1px solid var(--border);
-        transition: all var(--transition);
+        background: #fff;
+        border-radius: var(--radius-lg);
+        padding: 26px 18px;
         position: relative;
-        overflow: hidden;
     }
 
-        .feat-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--blue);
-            border-radius: 4px 0 0 4px;
-        }
-
-        .feat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-        }
-
     .feat-num {
-        font-family: var(--font-head);
-        font-size: 48px;
-        font-weight: 700;
-        color: var(--blue-light);
-        line-height: 1;
-        margin-bottom: 14px;
+        font-family: var(--font);
+        font-weight: 1000;
+        font-size: 56px;
         letter-spacing: -2px;
+        color: rgba(0,0,0,.08);
+        line-height: 1;
+        margin-bottom: 12px;
     }
 
     .feat-card h4 {
-        font-size: 18px;
-        font-weight: 700;
-        color: var(--ink);
-        margin-bottom: 12px;
+        font-size: 16px;
+        font-weight: 1000;
+        margin-bottom: 10px;
     }
 
     .feat-card p {
         font-size: 14px;
         line-height: 1.8;
-        color: var(--ink-muted);
+        color: var(--muted);
     }
 
-    /* =========================================
-               RESPONSIVE — LARGE TABLETS (max 1100px)
-            ========================================= */
+    /* Responsive */
     @@media (max-width: 1100px) {
-        .product-image-area {
-            flex: 0 0 400px;
-        }
-
         .product-detail-page {
-            gap: 48px;
-        }
-
-        .spec-grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    /* =========================================
-               RESPONSIVE — TABLETS (max 900px)
-            ========================================= */
-    @@media (max-width: 900px) {
-        .product-detail-page {
-            flex-direction: column;
             gap: 40px;
         }
 
         .product-image-area {
-            flex: none;
-            width: 100%;
-            max-width: 520px;
-            margin: 0 auto;
+            flex-basis: 420px;
         }
 
-        .product-info-area {
-            width: 100%;
+        .content-image {
+            flex-basis: 330px;
+        }
+
+        .spec-grid {
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+
+    @@media (max-width: 900px) {
+        .product-detail-page {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .product-image-area {
+            flex-basis: auto;
+            max-width: 560px;
+            margin: 0 auto;
         }
 
         .content-flex {
             flex-direction: column;
-            gap: 40px;
+            gap: 22px;
         }
 
         .content-image {
-            flex: none;
-            width: 100%;
-            max-width: 440px;
+            flex-basis: auto;
+            max-width: 480px;
             margin: 0 auto;
         }
 
         .spec-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2,1fr);
         }
 
         .features-grid {
@@ -807,121 +671,49 @@
         }
     }
 
-    /* =========================================
-               RESPONSIVE — MOBILE (max 640px)
-            ========================================= */
-    @@media (max-width: 640px) {
+   @@media (max-width: 640px) {
         .wrapper {
-            padding: 0 16px;
-        }
-
-        .product-detail-section {
-            padding: 32px 0 40px;
-        }
-
-        .main-product-image {
-            padding: 2px;
-        }
-
-        .product-info-area h1 {
-            font-size: 32px;
+            padding: 0 14px;
         }
 
         .product-features {
             grid-template-columns: 1fr;
         }
 
-        .product-buttons {
-            flex-direction: column;
-        }
-
-        .primary-btn,
-        .secondary-btn {
-            width: 100%;
-        }
-
         .spec-grid {
-            grid-template-columns: 1fr 1fr;
-            gap: 14px;
+            grid-template-columns: repeat(2,1fr);
         }
 
         .tab-item {
-            padding: 16px 18px;
+            padding: 12px 14px;
             font-size: 13px;
         }
 
-        .tab-panel {
-            padding: 48px 0;
-        }
-
-        .section-title {
-            margin-bottom: 36px;
+        .content-image {
+            padding: 8px;
         }
     }
 
-    /* =========================================
-               RESPONSIVE — SMALL MOBILE (max 400px)
-            ========================================= */
-    @@media (max-width: 400px) {
-        .product-info-area h1 {
-            font-size: 26px;
-        }
-
+    @@media (max-width: 420px) {
         .spec-grid {
             grid-template-columns: 1fr;
         }
-
-        .badge {
-            font-size: 12px;
-            padding: 7px 13px;
-        }
     }
-
-    /* =========================================
-               PAGE-SCOPED STYLES
-            ========================================= */
-    .ultraguard-wrapper { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color: #111; }
-
-    /* Image gallery layout */
-    .product-gallery { width: 100%; display: flex; flex-direction: column; gap: 12px; align-items: center; }
-    .product-main-image { width: 100%; max-width: 560px; height: auto; display: block; border: 1px solid #000; border-radius: 0 !important; box-shadow: none !important; background: #fff; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; outline: none; }
-
-    /* Thumbnails */
-    .product-thumbs { display: flex; gap: 10px; justify-content: center; }
-    .product-thumb { width: 86px; height: auto; display: block; border: 1px solid #000; border-radius: 0 !important; box-shadow: none !important; background: #fff; -webkit-tap-highlight-color: transparent; user-select: none; cursor: pointer; }
-    .product-thumb.active { border: 2px solid #000; }
-
-    /* Remove any hover/highlight effects inherited from other CSS */
-    .ultraguard-wrapper img { transition: none !important; filter: none !important; -webkit-filter: none !important; }
-    .ultraguard-wrapper img:hover, .ultraguard-wrapper img:focus, .ultraguard-wrapper img:active { box-shadow: none !important; transform: none !important; opacity: 1 !important; }
-
-    /* Desktop layout: thumbs vertical on right */
-    @@media (min-width: 992px) {
-      .product-gallery { flex-direction: row; align-items: flex-start; gap: 24px; }
-      .product-thumbs { flex-direction: column; gap: 12px; justify-content: flex-start; }
-      .product-thumb { width: 100px; }
-    }
-
-    /* Accessibility focus ring for keyboard users, subtle and not glowing */
-    .product-thumb:focus { outline: 2px solid rgba(0,0,0,0.12); outline-offset: 2px; }
 </style>
 
-<!-- ===================== TAB SCRIPT ===================== -->
+<!-- ===================== TAB SCRIPT (kept) ===================== -->
 <script>
     (function () {
-        const tabs = document.querySelectorAll('.tab-item');
-        const panels = document.querySelectorAll('.tab-panel');
+        var tabs = document.querySelectorAll('.tab-item');
+        var panels = document.querySelectorAll('.tab-panel');
 
         tabs.forEach(function (tab) {
             tab.addEventListener('click', function () {
-                // Deactivate all
                 tabs.forEach(function (t) { t.classList.remove('active'); });
                 panels.forEach(function (p) { p.classList.remove('active'); });
-
-                // Activate clicked
                 tab.classList.add('active');
                 var target = document.getElementById('tab-' + tab.dataset.tab);
-                if (target) { target.classList.add('active'); }
+                if (target) target.classList.add('active');
             });
         });
     })();
@@ -949,3 +741,4 @@
       });
     })();
 </script>
+

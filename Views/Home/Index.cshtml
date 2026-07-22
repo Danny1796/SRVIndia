@@ -311,11 +311,18 @@
                                                                                      data-id="6625a57" data-element_type="widget"
                                                                                      data-e-type="widget" data-widget_type="image.default">
                                                                                     <div class="elementor-widget-container">
-                                                                                        <img loading="lazy" decoding="async" width="1000"
-                                                                                             height="1000"
-                                                                                             src="~/images/Products/AIR GUARD.png"
-                                                                                             class="attachment-full size-full wp-image-21466"
-                                                                                             alt="" title="Home 21">
+                                                                                        <a asp-controller="Home" asp-action="Product">
+                                                                                        <img src="~/images/Products/AIR GUARD.png"
+                                                                                            asp-append-version="true"
+                                                                                            loading="lazy"
+                                                                                            decoding="async"
+                                                                                            width="1000"
+                                                                                            height="1000"
+                                                                                            class="attachment-full size-full wp-image-21466"
+                                                                                            alt="Air Guard"
+                                                                                            title="Home 21" />
+                                                                                        </a>
+                                                                                             
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="elementor-element elementor-element-98f80a0 e-con-full e-flex e-con e-child"
@@ -327,7 +334,7 @@
                                                                                              data-e-type="widget" data-widget_type="heading.default">
                                                                                             <div class="elementor-widget-container">
                                                                                                 <h2 class="elementor-heading-title elementor-size-default">
-                                                                                                   Air Guard
+                                                                                                  @* <a asp-action="Product" asp-controller="Home"> Air Guard</a> *@
                                                                                                 </h2>
                                                                                             </div>
                                                                                         </div>
@@ -526,29 +533,38 @@
                                                 </div>
 
 
-                                                <div class="card-container">
+                                                @* <div class="cards-container">
 
-                                                    <div class="card">
+                                                    <div class="cards">
                                                         <h3>SRV – Z4 CARBONPODS</h3>
                                                         <img src="~/images/Products/AIR GUARD.png" alt="AIR GUARD">
                                                     </div>
 
-                                                    <div class="card">
+                                                    <div class="cards">
                                                         <h3>SRV – W2 ROYALPODS</h3>
                                                             <img src="~/images/Products/HYDORGEL FILM SRV.png" alt="HYDORGEL FILM SRV">
                                                     </div>
 
-                                                    <div class="card">
+                                                    <div class="cards">
                                                         <h3>SRV – W2 BONDPODS</h3>
                                                                 <img src="~/images/Products/ULTRA GUARDnew.png" alt="ULTRA GUARDnew">
                                                     </div>
 
-                                                    <div class="card">
+                                                    <div class="cards">
+                                                        <h3>SRV – W1 HEXAPODS</h3>
+                                                                    <img src="~/images/Products/MAGIC GUARD.png" alt="ULTRA_GUARD-removebg-preview">
+                                                    </div>
+                                                      <div class="cards">
+                                                        <h3>SRV – W2 BONDPODS</h3>
+                                                                <img src="~/images/Products/ULTRA GUARDnew.png" alt="ULTRA GUARDnew">
+                                                    </div>
+
+                                                    <div class="cards">
                                                         <h3>SRV – W1 HEXAPODS</h3>
                                                                     <img src="~/images/Products/MAGIC GUARD.png" alt="ULTRA_GUARD-removebg-preview">
                                                     </div>
 
-                                                </div>
+                                                </div> *@
                                             </section>
 
                                             <section class="new-arrival-bg section-container">

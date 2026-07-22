@@ -73,6 +73,57 @@ namespace SRVIndia.Controllers
             return View();
         }
 
+        public IActionResult MagicGuard()
+        {
+            return View();
+        }
+
+        public IActionResult UV()
+        {
+            return View();
+
+        }
+
+        public IActionResult IProtect()
+        {
+            return View();
+
+        }
+        public IActionResult IpcaMEraLense()
+        {
+            return View();
+
+        }
+        public IActionResult HD_Clear()
+        {
+            return View();
+
+        }
+        public IActionResult HDPrivacy()
+        {
+            return View();
+
+        }
+        public IActionResult HHDClear()
+        {
+            return View();
+
+        }
+        public IActionResult MattPrivacy()
+        {
+            return View();
+
+        }
+        public IActionResult HMatt()
+        {
+            return View();
+
+        }
+        public IActionResult OriginalLether()
+        {
+            return View();
+
+        }
         public IActionResult News_Letter()
         {
             return View();

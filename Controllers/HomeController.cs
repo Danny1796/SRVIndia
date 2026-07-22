@@ -129,6 +129,16 @@ namespace SRVIndia.Controllers
             return View();
 
         }
+        public IActionResult NanoMatt()
+        {
+            return View();
+
+        }
+        public IActionResult PrivacyGuard()
+        {
+            return View();
+
+        }
         public IActionResult OriginalLether()
         {
             return View();

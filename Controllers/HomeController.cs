@@ -68,6 +68,21 @@ namespace SRVIndia.Controllers
         {
             return View();
         }
+
+        public IActionResult Antislippad()
+        {
+            return View();
+        }
+
+        public IActionResult Hydrogelfilmclear()
+        {
+            return View();
+        }
+
+        public IActionResult Cameralens()
+        {
+            return View();
+        }
         public IActionResult Coming_soon()
         {
             return View();
@@ -78,12 +93,7 @@ namespace SRVIndia.Controllers
             return View();
         }
 
-        public IActionResult UV()
-        {
-            return View();
-
-        }
-
+        
         public IActionResult IProtect()
         {
             return View();

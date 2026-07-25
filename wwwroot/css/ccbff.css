@@ -75,7 +75,7 @@ input, textarea {
 .wrapper {
     width: 1400px;
     max-width: 100%;
-    margin: 100px;
+    /*margin: 100px;*/
 }
 
 .section-container {
@@ -716,7 +716,7 @@ header {
 
 .index-about-bg {
     color: #FFF;
-    padding: 250px 0;
+    padding: 150px 0;
     background: url("../images/About/slidenew1srv.png") center no-repeat;about-sprit 
     background-size: cover;
 }

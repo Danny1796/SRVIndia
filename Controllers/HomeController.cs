@@ -114,6 +114,12 @@ namespace SRVIndia.Controllers
             return View();
 
         }
+
+        public IActionResult Graphix()
+        {
+            return View();
+
+        }
         public IActionResult HHDClear()
         {
             return View();
@@ -161,14 +167,37 @@ namespace SRVIndia.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(distributor);   // ✅ Save to DB
-                await _context.SaveChangesAsync();
+                Enquiries enquiry = new Enquiries
+                {
+                    IsReply = false, // Default value for new enquiries
+                    CreatedAt = DateTime.Now,
+                    PersonName = (distributor.FirstName + distributor.LastName),
+                    UserEmail = distributor.Email,
+                    MobileNo = distributor.Mobile,
+                    States = distributor.State,
+                    City = distributor.City,
+                    BusinessType = distributor.Distributorship,
+                    UserMessage = distributor.Message
+                };
 
-                ViewBag.Message = "Distributor Form Submitted Successfully!";
-                return View(); // stay on same page
+                try
+                {
+                    // 1. Add the object to the context
+                    _context.Add(enquiry);
+
+                    // 2. Push changes to the SQL Database
+                    await _context.SaveChangesAsync();
+
+                    // Redirect to a 'Success' page or Home
+                    return RedirectToAction("Index", "Home");
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
             }
-
-            return View(distributor);
+            // If validation fails, return the user to the form with their data
+            return View("Index", "Home");
         }
 
         public IActionResult Culture()

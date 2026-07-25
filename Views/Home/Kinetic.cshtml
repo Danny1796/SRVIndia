@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "SRV India - Kinetic";
+    ViewData["Title"] = "SRV India - Machine";
 }
 
 <!-- Optional icons/font (CDN) -->
@@ -44,7 +44,7 @@
             <!-- Right: Product Info -->
             <div class="product-info-area">
 
-                <h1>SRV — Kinetic<br /><span class="brand-name">Automatic Screen Protector Cutting Machine</span></h1>
+                <h1>SRV — Kinetic Cutting Machine<br /><span class="brand-name">Available</span></h1>
                 <h2>Precision Plotter for On-Demand Custom-Fit Cutting</h2>
                 <p class="product-short-desc">
                     The SRV Kinetic is an all-in-one automatic cutting machine that produces
@@ -52,6 +52,7 @@
                     pre-cut stock required. Load hydrogel film, PET, or back-skin material,
                     select the device from the built-in touchscreen library, and the precision
                     blade cuts a perfect edge-to-edge fit in seconds.
+
                 </p>
 
                 <!-- Features -->
@@ -117,8 +118,10 @@
                         </div>
                     </div>
 
+
+
                 </div>
-              </div>  
+
 
                 @* <div class="pack-info" aria-label="Pack information">
                     <span class="pack-badge"><i class="fa-solid fa-box"></i> Inner Pack: 10 PCS</span>
@@ -126,7 +129,7 @@
                 </div> *@
 
                 <div class="product-buttons" aria-label="Actions">
-                    <a href="javascript:void(0);" id="enquiry" class="primary-btn">
+                    <a asp-controller="Home" asp-action="DistributorForm" id="enquiry" class="primary-btn">
                         <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
                         <span>Become a Dealer</span>
                     </a>
@@ -157,26 +160,27 @@
     <div class="wrapper">
         <div class="content-flex">
             <div class="content-text">
-                            <h3>Kinetic — Cut Any Model, Any Time, No Inventory Needed</h3>
-                            <p>
-                                Stocking pre-cut protectors for every phone on the market is impossible —
-                                new models launch constantly, and shelf space is limited. SRV Kinetic
-                                removes that problem entirely. Load a roll of hydrogel film, glass, or
-                                back-skin material, pick the exact device from the built-in touchscreen
-                                library, and the machine cuts a precise, edge-to-edge template in seconds.
-                            </p>
-                            <p>
-                                The onboard model database covers thousands of smartphones, tablets, and
-                                smartwatches, and is kept current with regular USB or Wi-Fi updates — so
-                                you're never caught without a template for the newest release. A manual
-                                crank feed and roller-guided material bay keep every sheet aligned for
-                                clean, consistent cuts.
-                            </p>
-                            <p>
-                                Built into a compact, counter-ready housing, Kinetic is designed to sit and
-                                perform right at the point of sale — turning any retail counter or kiosk
-                                into an on-demand protector station.
-                            </p>
+                <h3>Kinetic — Cut Any Model, Any Time, No Inventory Needed</h3>
+                <p>
+                    Stocking pre-cut protectors for every phone on the market is impossible —
+                    new models launch constantly, and shelf space is limited. SRV Kinetic
+                    removes that problem entirely. Load a roll of hydrogel film, glass, or
+                    back-skin material, pick the exact device from the built-in touchscreen
+                    library, and the machine cuts a precise, edge-to-edge template in seconds.
+                </p>
+                <p>
+                    The onboard model database covers thousands of smartphones, tablets, and
+                    smartwatches, and is kept current with regular USB or Wi-Fi updates — so
+                    you're never caught without a template for the newest release. A manual
+                    crank feed and roller-guided material bay keep every sheet aligned for
+                    clean, consistent cuts.
+                </p>
+                <p>
+                    Built into a compact, counter-ready housing, Kinetic is designed to sit and
+                    perform right at the point of sale — turning any retail counter or kiosk
+                    into an on-demand protector station.
+                </p>
+
             </div>
             <div class="content-image" aria-label="Product detail image">
                 <img src="~/images/Products/KINETIC.png" alt="SRV India Ultra Guard ESD Screen Protector Detail" />
@@ -186,7 +190,7 @@
 </section>
 
 <!-- ===================== SPECIFICATIONS PANEL ===================== -->
-<section class="tab-panel" id="tab-specs">
+@* <section class="tab-panel" id="tab-specs">
     <div class="wrapper">
         <h2 class="section-title">Product Specifications</h2>
 
@@ -205,37 +209,38 @@
 </section>
 
 <!-- ===================== FEATURES PANEL ===================== -->
-            <section class="tab-panel" id="tab-features">
-                <div class="wrapper">
-                    <h2 class="section-title">Why Kinetic Stands Apart</h2>
+<section class="tab-panel" id="tab-features">
+    <div class="wrapper">
+        <h2 class="section-title">Why Ultra Guard Stands Apart</h2>
 
-                    <div class="features-grid">
-                        <div class="feat-card">
-                            <div class="feat-num">01</div>
-                            <h4>On-Demand Custom Cutting</h4>
-                            <p>No inventory to stock — cut the exact protector needed, per order, in seconds.</p>
-                        </div>
+        <div class="features-grid">
+            <div class="feat-card">
+                <div class="feat-num">01</div>
+                <h4>ESD Antistatic Technology</h4>
+                <p>Helps neutralize static charge — one major reason dust can stick to displays.</p>
+            </div>
 
-                        <div class="feat-card">
-                            <div class="feat-num">02</div>
-                            <h4>Constantly Updated Model Library</h4>
-                            <p>New phone launches added regularly, so your templates never fall behind the market.</p>
-                        </div>
+            <div class="feat-card">
+                <div class="feat-num">02</div>
+                <h4>Super HD Dustproof Barrier</h4>
+                <p>Helps block airborne micro-particles to maintain clearer screen visibility.</p>
+            </div>
 
-                        <div class="feat-card">
-                            <div class="feat-num">03</div>
-                            <h4>Multi-Material Versatility</h4>
-                            <p>One machine handles hydrogel, PET film, back skins, and camera lens protectors.</p>
-                        </div>
+            <div class="feat-card">
+                <div class="feat-num">03</div>
+                <h4>Military-Grade 9H Hardness</h4>
+                <p>Rated 9H for improved resistance against daily scratches.</p>
+            </div>
 
-                        <div class="feat-card">
-                            <div class="feat-num">04</div>
-                            <h4>Retail-Ready Compact Build</h4>
-                            <p>Sized to sit right at the counter and perform in front of customers, order after order.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="feat-card">
+                <div class="feat-num">04</div>
+                <h4>Full Coverage Protection</h4>
+                <p>Strong adhesion supports a flush fit and better edge coverage.</p>
+            </div>
+        </div>
+    </div>
+</section> *@
+
 <!-- ===================== SEO SCHEMA ===================== -->
 <script type="application/ld+json">
     {
@@ -296,11 +301,11 @@
         border-bottom: 1px solid var(--border);
         background: #fff;
     }
-
+/* 
     .breadcrumb {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 1px;
         align-items: center;
         font-size: 14px;
         color: var(--muted);
@@ -309,7 +314,7 @@
         .breadcrumb a {
             color: var(--text);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 100;
         }
 
             .breadcrumb a:hover {
@@ -318,7 +323,7 @@
 
         .breadcrumb .sep {
             color: #777;
-        }
+        } */
 
     /* Hero */
     .product-detail-section {
@@ -384,20 +389,20 @@
     }
 
     h1 {
-        font-size: clamp(2px,4vw,50px);
+        font-size: clamp(2px,4vw,20px);
         line-height: 1.05;
         margin-bottom: 10px;
         font-weight: 600;
     }
 
     .brand-name {
-        font-weight: 500;
-        text-decoration-color: lawngreen;
+        font-weight: 600;
+        color: #1eb931;
     }
 
     h2 {
-        font-size: clamp(2px,2.1vw,20px);
-        font-weight: 600;
+        font-size: clamp(15px,2.1vw,20px);
+        font-weight: 500;
         margin-bottom: 16px;
         color: var(--text);
     }
@@ -555,7 +560,7 @@
     }
 
         .content-text h3 {
-            font-size: clamp(22px,2.7vw,34px);
+            font-size: clamp(22px,2.7vw,22px);
             margin-bottom: 16px;
             font-weight: 600;
         }
@@ -741,14 +746,14 @@
 
 <!-- ===================== TAB SCRIPT (kept) ===================== -->
 <script>
-    (function () {
+    (function() {
         var tabs = document.querySelectorAll('.tab-item');
         var panels = document.querySelectorAll('.tab-panel');
 
-        tabs.forEach(function (tab) {
-            tab.addEventListener('click', function () {
-                tabs.forEach(function (t) { t.classList.remove('active'); });
-                panels.forEach(function (p) { p.classList.remove('active'); });
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                panels.forEach(function(p) { p.classList.remove('active'); });
                 tab.classList.add('active');
                 var target = document.getElementById('tab-' + tab.dataset.tab);
                 if (target) target.classList.add('active');

@@ -11,13 +11,13 @@
 <!-- ===================== BREADCRUMB ===================== -->
 <section class="breadcrumb-section">
     <div class="wrapper">
-        <nav class="breadcrumb" aria-label="breadcrumb">
+        <div class="breadcrumb" aria-label="breadcrumb">
             <a asp-controller="Home" asp-action="Index">Home</a>
 
             <a asp-controller="Products" asp-action="Index">Products</a>
 
             <strong>UV Screen Protector</strong>
-        </nav>
+        </div>
     </div>
 </section>
 
@@ -125,7 +125,7 @@
                 </div> *@
 
                 <div class="product-buttons" aria-label="Actions">
-                    <a href="javascript:void(0);" id="enquiry" class="primary-btn">
+                    <a asp-controller="Home" asp-action="DistributorForm" id="enquiry" class="primary-btn">
                         <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
                         <span>Become a Dealer</span>
                     </a>
@@ -298,7 +298,7 @@
         background: #fff;
     }
 
-    .breadcrumb {
+    /* .breadcrumb {
         display: flex;
         flex-wrap: wrap;
         gap: 1px;
@@ -319,7 +319,7 @@
 
         .breadcrumb .sep {
             color: #777;
-        }
+        } */
 
     /* Hero */
     .product-detail-section {
@@ -398,7 +398,7 @@
 
     h2 {
         font-size: clamp(15px,2.1vw,20px);
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 16px;
         color: var(--text);
     }
@@ -556,7 +556,7 @@
     }
 
         .content-text h3 {
-            font-size: clamp(22px,2.7vw,34px);
+            font-size: clamp(22px,2.7vw,22px);
             margin-bottom: 16px;
             font-weight: 600;
         }

@@ -4,45 +4,162 @@
     ViewData["Title"] = "All Enquiries";
 }
 
-<div class="container mt-4">
+<style>
+    .enquiry-table {
+        width: 100%;
+    }
+
+        .enquiry-table table {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .enquiry-table th,
+        .enquiry-table td {
+            padding: 12px;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+            .enquiry-table td:last-child,
+            .enquiry-table th:last-child {
+                text-align: center;
+            }
+
+    /* Tablet */
+    @@media (max-width:991px) {
+        .enquiry-table {
+            overflow-x: auto;
+        }
+
+            .enquiry-table th,
+            .enquiry-table td {
+                font-size: 14px;
+                padding: 10px;
+            }
+    }
+
+    /* Mobile */
+    @@media (max-width:767px) {
+
+        .enquiry-table table,
+        .enquiry-table thead,
+        .enquiry-table tbody,
+        .enquiry-table th,
+        .enquiry-table td,
+        .enquiry-table tr {
+            display: block;
+            width: 100%;
+        }
+
+        .enquiry-table thead {
+            display: none;
+        }
+
+        .enquiry-table tr {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,.08);
+            padding: 10px;
+        }
+
+        .enquiry-table td {
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding: 10px 10px 10px 45%;
+            text-align: right;
+            white-space: normal;
+        }
+
+            .enquiry-table td:last-child {
+                border-bottom: none;
+                text-align: center;
+                padding-left: 10px;
+            }
+
+            .enquiry-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                width: 40%;
+                font-weight: bold;
+                text-align: left;
+                color: #333;
+            }
+
+            .enquiry-table td:last-child::before {
+                display: none;
+            }
+
+        .btn-sm,
+        .btn-success {
+            width: 100%;
+        }
+
+        .d-flex {
+            flex-direction: column;
+            align-items: stretch !important;
+        }
+    }
+</style>
+
+<div class="container-fluid mt-4">
+
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2>Submitted Enquiries</h2>
-        <a asp-action="Create" class="btn btn-success">Add New Enquiry</a>
+        @* <h2>Submitted Enquiries</h2> *@
+        @* <a asp-action="Create" class="btn btn-success">Add New Enquiry</a> *@
     </div>
 
-    <table class="table table-striped table-hover border">
-        <thead class="table-dark">
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>State</th>
-                <th>City</th>
-                <th>Product Name</th>
-                <th>Business Type</th>
-                <th>Message</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
+    <div class="table-responsive enquiry-table">
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="table-dark">
                 <tr>
-                    <td>@item.Id</td>
-                    <td>@item.PersonName</td>
-                    <td>@item.UserEmail</td>
-                    <td>@item.States</td>
-                    <td>@item.City</td>
-                    <td>@item.ProductName</td>
-                    <td>@item.BusinessType</td>
-                    <td>
-                        @(item.UserMessage?.Length > 50 ? item.UserMessage.Substring(0, 47) + "..." : item.UserMessage)
-                    </td>
-                    <td>
-                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">View</a>
-                    </td>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile No.</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Product Name</th>
+                    <th>Business Type</th>
+                    <th>Message</th>
+                    <th>Actions</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td data-label="ID">@item.Id</td>
+                        <td data-label="Name">@item.PersonName</td>
+                        <td data-label="Email">@item.UserEmail</td>
+                        <td data-label="Mobile">@item.MobileNo</td>
+                        <td data-label="State">@item.States</td>
+                        <td data-label="City">@item.City</td>
+                        <td data-label="Product">@item.ProductName</td>
+                        <td data-label="Business">@item.BusinessType</td>
+                        <td data-label="Message">
+                            @(item.UserMessage?.Length > 50
+                                ? item.UserMessage.Substring(0, 47) + "..."
+                                : item.UserMessage)
+                        </td>
+                        <td data-label="Action">
+                            <a asp-action="Details"
+                               asp-route-id="@item.Id"
+                               class="btn btn-info btn-sm">
+                                View
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+
 </div>

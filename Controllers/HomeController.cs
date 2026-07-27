@@ -87,7 +87,10 @@ namespace SRVIndia.Controllers
         {
             return View();
         }
-
+        public IActionResult Coming_soon1()
+        {
+            return View();
+        }
         public IActionResult MagicGuard()
         {
             return View();

@@ -1,0 +1,293 @@
+﻿@{
+    ViewData["Title"] = "SRV Screen Protectors";
+}
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg,#0F172A,#1D4ED8,#3B82F6);
+        min-height: 100vh;
+    }
+
+    .coming-section {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 15px;
+    }
+
+    .coming-card {
+        width: 100%;
+        max-width: 900px;
+        background: #f97e01;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255,255,255,.2);
+        border-radius: 25px;
+        padding: 50px 35px;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 15px 45px rgba(0,0,0,.35);
+    }
+
+    .logo-circle {
+        width: 120px;
+        height: 120px;
+        margin: auto;
+        border-radius: 50%;
+        background: rgba(255,255,255,.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        color: #FFD54F;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @@keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-12px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .badge-launch {
+        display: inline-block;
+        margin-top: 25px;
+        background: #FFC107;
+        color: #000;
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    h1 {
+        margin-top: 25px;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    h4 {
+        color: #FFD54F;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+
+    .description {
+        font-size: 18px;
+        color: #F1F5F9;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .features {
+        margin-top: 40px;
+    }
+
+    .feature-box {
+        background: rgba(255,255,255,.10);
+        border-radius: 15px;
+        padding: 25px 15px;
+        transition: .3s;
+        height: 100%;
+    }
+
+        .feature-box:hover {
+            background: rgba(255,255,255,.20);
+            transform: translateY(-8px);
+        }
+
+        .feature-box i {
+            font-size: 45px;
+            margin-bottom: 15px;
+            color: #FFD54F;
+        }
+
+        .feature-box h5 {
+            font-weight: 600;
+        }
+
+        .feature-box p {
+            font-size: 14px;
+            color: #E5E7EB;
+        }
+
+    .launch-msg {
+        margin-top: 35px;
+        font-size: 20px;
+        color: #FFE082;
+        font-weight: 500;
+    }
+
+    .btn-home {
+        margin-top: 35px;
+        padding: 14px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 40px;
+    }
+
+    .footer-text {
+        margin-top: 35px;
+        color: #CBD5E1;
+        font-size: 15px;
+    }
+
+    @@media(max-width:768px) {
+
+        .coming-card {
+            padding: 35px 20px;
+        }
+
+        h1 {
+            font-size: 34px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        .description {
+            font-size: 16px;
+        }
+
+        .logo-circle {
+            width: 95px;
+            height: 95px;
+            font-size: 48px;
+        }
+
+        .feature-box {
+            margin-bottom: 20px;
+        }
+
+        .launch-msg {
+            font-size: 17px;
+        }
+    }
+</style>
+
+<div class="container coming-section">
+
+    <div class="coming-card">
+
+        <div class="logo-circle">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+
+        <div class="badge-launch">
+            <i class="fa-solid fa-rocket"></i>
+            Launching Soon
+        </div>
+
+        <h1>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            SRV Screen Protectors
+        </h1>
+
+        <h4>
+            ✨ Premium Protection Coming Soon ✨
+        </h4>
+
+        <p class="description">
+            <i class="fa-solid fa-hand-wave text-warning"></i>
+            Welcome to <strong>SRV INDIA</strong>.
+            We're excited to introduce our next-generation collection of premium
+            screen protection solutions for smartphones, tablets, smartwatches,
+            laptops, and more.
+        </p>
+
+        <p class="description">
+            Enjoy crystal-clear visibility, military-grade protection,
+            bubble-free installation, and an ultra-smooth touch experience.
+        </p>
+
+        <div class="row features">
+
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+                <div class="feature-box">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h5>Tempered Glass</h5>
+                    <p>9H Hardness Protection</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+                <div class="feature-box">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <h5>Privacy Glass</h5>
+                    <p>Secure Your Privacy</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+                <div class="feature-box">
+                    <i class="fa-solid fa-camera"></i>
+                    <h5>Camera Lens</h5>
+                    <p>Lens Protection</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+                <div class="feature-box">
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <h5>Tablet Guard</h5>
+                    <p>Premium Screen Safety</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+                <div class="feature-box">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h5>Laptop Protector</h5>
+                    <p>Crystal Clear Display</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-6 mb-4">
+                <div class="feature-box">
+                    <i class="fa-solid fa-gem"></i>
+                    <h5>Premium Quality</h5>
+                    <p>Designed for Every Device</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="launch-msg">
+            <i class="fa-solid fa-hourglass-half"></i>
+            Something Amazing is Coming!
+            Stay Tuned for the Grand Launch.
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+        <a asp-controller="Home"
+           asp-action="Index"
+           class="btn btn-warning btn-home">
+            <i class="fa-solid fa-house"></i>
+            Back to Home
+        </a>
+
+        <div class="footer-text">
+            <i class="fa-solid fa-heart"></i>
+            Thank you for visiting <strong>SRV INDIA</strong>.<br>
+            We look forward to serving you with the best screen protection products.
+        </div>
+
+    </div>
+
+</div>

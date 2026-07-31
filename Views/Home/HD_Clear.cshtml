@@ -15,7 +15,7 @@
         <nav class="breadcrumb" aria-label="breadcrumb">
             <a asp-controller="Home" asp-action="Index">Home</a>
 
-            <a asp-controller="Products" asp-action="Index">Products</a>
+            <a asp-controller="Home" asp-action="Index">Products</a>
 
             <strong>Auto-Repair HD Clear  </strong>
         </nav>
@@ -30,7 +30,7 @@
             <!-- Left: Product Image -->
             <div class="product-image-area" aria-label="Product image">
                 <figure class="main-product-image">
-                    <img src="~/images/Products/AHDClear.PNG" alt="SRV India Ultra Guard ESD Screen Protector" />
+                    <img class="product-image" src="~/images/Products/AHDClear.PNG" alt="SRV India Ultra Guard ESD Screen Protector" />
                 </figure>
 
                 @* <div class="product-badges" aria-label="Key highlights">
@@ -187,7 +187,7 @@
                 </p>
             </div>
             <div class="content-image" aria-label="Product detail image">
-                <img src="~/images/Products/AHDClear.PNG" alt="SRV India HD Clear Screen Protector Detail" />
+                <img class="product-image" src="~/images/Products/AHDClear.PNG" alt="SRV India HD Clear Screen Protector Detail" />
             </div>
         </div>
     </div>
@@ -286,7 +286,7 @@
         color: var(--text);
     }
 
-    img {
+    .product-image {
         max-width: 100%;
         height: auto;
         display: block;

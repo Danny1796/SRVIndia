@@ -1,0 +1,151 @@
+﻿@model SRVIndia.Models.Enquiries
+
+@{
+    ViewData["Title"] = "Enquiry Details";
+}
+
+<style>
+    body {
+        background: #f5f7fb;
+    }
+
+    .details-card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .details-header {
+        background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+        color: #fff;
+        padding: 18px 25px;
+    }
+
+        .details-header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+    .detail-item {
+        padding: 15px 0;
+        border-bottom: 1px solid #ececec;
+    }
+
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+
+    .detail-label {
+        font-weight: 600;
+        color: #555;
+    }
+
+    .detail-value {
+        color: #212529;
+        word-break: break-word;
+    }
+
+    .message-box {
+        background: #f8f9fa;
+        border-left: 4px solid #0d6efd;
+        padding: 15px;
+        border-radius: 8px;
+        white-space: pre-wrap;
+    }
+
+    .card-footer {
+        background: #fff;
+        border-top: 1px solid #eee;
+    }
+
+    @@media (max-width: 767px) {
+
+        .details-header {
+            text-align: center;
+        }
+
+            .details-header .btn {
+                margin-top: 10px;
+                width: 100%;
+            }
+
+        .detail-item {
+            padding: 12px 0;
+        }
+
+        .detail-label {
+            margin-bottom: 5px;
+        }
+
+        .card-footer .btn {
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="container py-4">
+
+    <div class="card shadow details-card">
+
+        <div class="details-header d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <h3>Enquiry Details #@Model.Id</h3>
+
+            <a asp-action="Index" class="btn btn-light btn-sm mt-3 mt-md-0">
+                ← Back to List
+            </a>
+        </div>
+
+        <div class="card-body">
+
+            <div class="row detail-item">
+                <div class="col-md-3 detail-label">
+                    Full Name
+                </div>
+                <div class="col-md-9 detail-value">
+                    @Model.PersonName
+                </div>
+            </div>
+
+            <div class="row detail-item">
+                <div class="col-md-3 detail-label">
+                    Email Address
+                </div>
+                <div class="col-md-9 detail-value">
+                    <a href="mailto:@Model.UserEmail">
+                        @Model.UserEmail
+                    </a>
+                </div>
+            </div>
+
+            <div class="row detail-item">
+                <div class="col-md-3 detail-label">
+                    Business Type
+                </div>
+                <div class="col-md-9 detail-value">
+                    @Model.BusinessType
+                </div>
+            </div>
+
+            <div class="row detail-item">
+                <div class="col-md-3 detail-label">
+                    User Message
+                </div>
+                <div class="col-md-9">
+                    <div class="message-box">
+                        @Model.UserMessage
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-footer text-md-end text-center">
+            <a asp-action="Index" class="btn btn-secondary px-4">
+                Close
+            </a>
+        </div>
+
+    </div>
+
+</div>

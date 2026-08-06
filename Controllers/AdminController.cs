@@ -19,6 +19,10 @@ namespace SRVIndia.Controllers
             _environment = environment;
         }
 
+        public IActionResult ProductUpload()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             // Fetches all enquiries from the database asynchronously

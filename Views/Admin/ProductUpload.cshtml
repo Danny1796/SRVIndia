@@ -1,0 +1,428 @@
+﻿@{
+    ViewData["Title"] = "Add Product";
+    
+}
+
+ @* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">  *@
+
+<style>
+    /* ============ THEME TOKENS ============ */
+    :root {
+        --ap-primary: #2f6fed;
+        --ap-primary-dark: #1f4fc4;
+        --ap-text: #1f2937;
+        --ap-muted: #6b7280;
+        --ap-border: #e5e7eb;
+        --ap-bg: #f7f8fa;
+        --ap-card-bg: #ffffff;
+        --ap-radius: 12px;
+        --ap-shadow: 0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04);
+    }
+
+    /* ============ PAGE WRAPPER ============ */
+    .ap-wrapper {
+        background: var(--ap-bg);
+        padding: 24px 0 60px;
+        /* font-family: "Segoe UI", Roboto, Arial, sans-serif; */
+        color: var(--ap-text);
+    }
+
+    .ap-card {
+        background: var(--ap-card-bg);
+        border: 1px solid var(--ap-border);
+        border-radius: var(--ap-radius);
+        box-shadow: var(--ap-shadow);
+        padding: 24px;
+    }
+
+    /* ============ PAGE TITLE / HEADER BAR ============ */
+    .ap-page-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+        .ap-page-title h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--ap-text);
+        }
+
+        .ap-page-title small {
+            color: var(--ap-muted);
+            font-size: 0.85rem;
+        }
+
+    .ap-btn-primary {
+        background: var(--ap-primary);
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 10px 22px;
+        transition: background 0.15s ease, transform 0.1s ease;
+    }
+
+        .ap-btn-primary:hover {
+            background: var(--ap-primary-dark);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+    .ap-btn-secondary {
+        background: #fff;
+        border: 1px solid var(--ap-border);
+        color: var(--ap-text);
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 10px 22px;
+    }
+
+    /* ============ SECTION CARD BOX ============ */
+    .card-box {
+        background: var(--ap-card-bg);
+        border: 1px solid var(--ap-border);
+        border-radius: var(--ap-radius);
+        padding: 20px;
+        height: 100%;
+    }
+
+        .card-box h5 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--ap-text);
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--ap-border);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .card-box h5 i {
+                color: var(--ap-primary);
+            }
+
+    /* ============ FORM CONTROLS ============ */
+    .ap-wrapper label {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--ap-muted);
+        margin-bottom: 6px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+    }
+
+    .ap-wrapper .form-control,
+    .ap-wrapper .form-select {
+        border: 1px solid var(--ap-border);
+        border-radius: 8px;
+        padding: 10px 12px;
+        font-size: 1rem;
+        color: var(--ap-text);
+        background-color: #fff;
+    }
+
+        .ap-wrapper .form-control:focus,
+        .ap-wrapper .form-select:focus {
+            border-color: var(--ap-primary);
+            box-shadow: 0 0 0 3px rgba(47, 111, 237, 0.12);
+        }
+
+        .ap-wrapper .form-control::placeholder {
+            color: #9ca3af;
+        }
+
+    /* ============ IMAGE UPLOAD BOX ============ */
+    .upload-box {
+        position: relative;
+        display: block;
+        border: 2px dashed var(--ap-border);
+        border-radius: var(--ap-radius);
+        text-align: center;
+        padding: 18px;
+        cursor: pointer;
+        background: #fafbfc;
+        transition: border-color 0.15s ease, background 0.15s ease;
+    }
+
+        .upload-box:hover {
+            border-color: var(--ap-primary);
+            background: #f2f6fe;
+        }
+
+        .upload-box img {
+            border-radius: 8px;
+            max-height: 220px;
+            object-fit: contain;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+
+        .upload-box span {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--ap-primary);
+        }
+
+            .upload-box span i {
+                margin-right: 6px;
+            }
+
+    /* ============ FEATURE CARDS ============ */
+    .feature-box {
+        border: 1px solid var(--ap-border);
+        border-radius: 10px;
+        padding: 16px;
+        background: #fafbfc;
+        height: 100%;
+        position: relative;
+    }
+
+        .feature-box::before {
+            content: "\f005";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--ap-primary);
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            font-size: 0.85rem;
+            opacity: 0.5;
+        }
+
+    /* ============ GALLERY ============ */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+
+    .gallery-item {
+        border: 1px dashed var(--ap-border);
+        border-radius: 10px;
+        background: #fafbfc;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #b0b7c3;
+        font-size: 1.5rem;
+        transition: border-color 0.15s ease, color 0.15s ease;
+    }
+
+        .gallery-item:hover {
+            border-color: var(--ap-primary);
+            color: var(--ap-primary);
+        }
+
+    /* ============ BUTTONS INSIDE SECTIONS ============ */
+    .ap-btn-add {
+        background: #eaf1ff;
+        color: var(--ap-primary);
+        border: 1px solid #cfe0fd;
+        font-weight: 600;
+        font-size: 0.85rem;
+        border-radius: 8px;
+        padding: 7px 16px;
+    }
+
+        .ap-btn-add:hover {
+            background: #dbe8ff;
+            color: var(--ap-primary-dark);
+        }
+
+    /* ============ RESPONSIVE ============ */
+    @@media (max-width: 767.98px) {
+        .ap-page-title {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+            .ap-page-title .ap-btn-primary {
+                width: 100%;
+            }
+
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .card-box {
+            padding: 16px;
+        }
+
+        .ap-card {
+            padding: 16px;
+        }
+
+        .text-end.mt-4 .btn {
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="ap-wrapper">
+    <div class="container-fluid">
+
+        <div class="ap-card">
+
+            <div class="ap-page-title">
+                <div>
+                    <h2>Add New Product</h2>
+                    <small>Create product details</small>
+                </div>
+
+                <button type="button" class="ap-btn-primary">
+                    <i class="fa fa-save"></i>
+                    Save Product
+                </button>
+            </div>
+
+            <form>
+
+                <!--================== TOP SECTION ==================-->
+                <div class="row g-4">
+
+                    <!-- LEFT -->
+                    <div class="col-lg-4">
+                        <div class="card-box">
+                            <h5><i class="fa fa-image"></i> Main Product Image</h5>
+
+                            <label class="upload-box">
+                                <input type="file" hidden id="mainImage">
+                                <img id="preview" src="https://placehold.co/500x500?text=Upload+Image" class="img-fluid">
+                                <span>
+                                    <i class="fa fa-cloud-upload-alt"></i>
+                                    Click to Upload
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-lg-8">
+                        <div class="card-box">
+                            <h5><i class="fa fa-box"></i> Product Information</h5>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+                                    <label>Product Name</label>
+                                    <input class="form-control" placeholder="Enter Product Name">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label>Product Subtitle</label>
+                                    <input class="form-control" placeholder="Subtitle">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Category</label>
+                                    <select class="form-select">
+                                        <option>Select</option>
+                                           <option>Glass</option>
+                                            <option>Accessories</option>
+                                    </select>
+                                </div>
+
+                               
+
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Status</label>
+                                    <select class="form-select">
+                                        <option>Active</option>
+                                        <option>Draft</option>
+                                    </select>
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--================== SHORT DESCRIPTION ==================-->
+                <div class="card-box mt-4">
+                    <h5><i class="fa fa-align-left"></i> Short Description</h5>
+                    <textarea rows="4" class="form-control" placeholder="Write a short, catchy description of the product"></textarea>
+                </div>
+
+                <!--================== FEATURES ==================-->
+                <div class="card-box mt-4">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                        <h5 class="mb-0" style="border:none;padding:0;"><i class="fa fa-star"></i> Feature Cards</h5>
+
+                    </div>
+
+                    <div class="row mt-3 g-3">
+
+                        <div class="col-lg-6">
+                            <div class="feature-box">
+                                <input class="form-control mb-2" placeholder="Feature Title">
+                                <textarea rows="3" class="form-control" placeholder="Feature Description"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="feature-box">
+                                <input class="form-control mb-2" placeholder="Feature Title">
+                                <textarea rows="3" class="form-control" placeholder="Feature Description"></textarea>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-lg-6">
+                            <div class="feature-box">
+                                <input class="form-control mb-2" placeholder="Feature Title">
+                                <textarea rows="3" class="form-control" placeholder="Feature Description"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="feature-box">
+                                <input class="form-control mb-2" placeholder="Feature Title">
+                                <textarea rows="3" class="form-control" placeholder="Feature Description"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--================== LONG DESCRIPTION ==================-->
+                <div class="card-box mt-4">
+                    <h5><i class="fa fa-file-alt"></i> Long Description</h5>
+                    <input class="form-control mb-3" placeholder="Section Title">
+                    <textarea rows="7" class="form-control" placeholder="Long Description"></textarea>
+                </div>
+
+                <!--================== GALLERY ==================-->
+                <div class="card-box mt-4">
+                    <h5><i class="fa fa-images"></i> Gallery Images</h5>
+                    <input type="file" multiple class="form-control mb-3">
+
+                    <div class="gallery">
+                        <div class="gallery-item"><i class="fa fa-image"></i></div>
+                        <div class="gallery-item"><i class="fa fa-image"></i></div>
+                        <div class="gallery-item"><i class="fa fa-image"></i></div>
+                        <div class="gallery-item"><i class="fa fa-image"></i></div>
+                    </div>
+                </div>
+
+             
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
